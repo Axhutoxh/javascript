@@ -22,7 +22,6 @@
 # Javascript History
 
 - https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document.link
-
 ![History page1](http://url/to/img.png)
 
 ![History page1](http://url/to/img.png)
