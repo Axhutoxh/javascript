@@ -23,6 +23,8 @@
 
 - https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document.link
 
+
   ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg)
+
 
   ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg)
