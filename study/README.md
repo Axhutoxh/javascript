@@ -4,6 +4,7 @@
 
 1. [About Javascript](#javascript?)
 2. [History](#javascript-history)
+3. [JavaScript Working](#how-javascript-works)
 
 # Javascript
 
@@ -21,10 +22,25 @@
 
 # Javascript History
 
-- https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document.link
+- https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document link
 
+  <p float="left">
 
-  ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg)
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg" width="450" />
+      &nbsp; &nbsp;
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg"  width="450" />
 
+  </p>
 
-  ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg)
+# How JavaScript Works ?
+
+- Javascript is Client-Side Script Language . Each browser has JS Engine through which we can run our javascript code.
+
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png"   />
+
+  Popular Browser with their JS Engine
+
+  1. Google Chrome , Node Js -> V8 Engine
+  2. Fire Fox -> Spider Monkey
+  3. Internet Explorer -> Chakra 🪦(R.i.p)
+  4. Safari -> Safari
