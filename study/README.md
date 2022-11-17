@@ -24,12 +24,12 @@
 
 - https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document link
 
-  ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg) | ![History page2](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg)
+  <p float="left">
 
-    <p float="left">
-  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg" width="400" />
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg" width="500" />
 
-    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg"  width="400" />
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg"  width="500" />
+
   </p>
 
 #
