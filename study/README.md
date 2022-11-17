@@ -4,6 +4,7 @@
 
 1. [About Javascript](#javascript?)
 2. [History](#javascript-history)
+3. [JavaScript Working](#how-javascript-works)
 
 # Javascript
 
@@ -23,8 +24,10 @@
 
 - https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document.link
 
-
   ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg)
 
-
   ![History page1](https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg)
+
+  <img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
+
+#
