@@ -4,7 +4,7 @@
 
 1. [About Javascript](#javascript?)
 2. [History](#javascript-history)
-3. [JavaScript Working](#how-javascript-works)
+3. [JavaScript Working](#how-javascript-works-?)
 
 # Javascript
 
