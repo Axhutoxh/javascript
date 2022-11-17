@@ -25,9 +25,9 @@
 - https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/javascriptBasic.pdf document link
 
   <p float="left">
-  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="800" />
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg" />
 
-    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="800" />
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg" />
   </p>
 
 #
