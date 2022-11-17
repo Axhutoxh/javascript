@@ -32,4 +32,13 @@
 
   </p>
 
-#
+# How JavaScript Works ?
+
+- Javascript is Client-Side Script Language . Each browser has JS Engine through which we can run our javascript code.
+
+  Popular Browser with their JS Engine
+
+  1. Google Chrome , Node Js -> V8 Engine
+  2. Fire Fox -> Spider Monkey
+  3. Internet Explorer -> Chakra 🪦(R.i.p)
+  4. Safari -> Safari
