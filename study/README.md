@@ -36,6 +36,8 @@
 
 - Javascript is Client-Side Script Language . Each browser has JS Engine through which we can run our javascript code.
 
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png"   />
+
   Popular Browser with their JS Engine
 
   1. Google Chrome , Node Js -> V8 Engine
