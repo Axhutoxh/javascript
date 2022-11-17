@@ -4,7 +4,7 @@
 
 1. [About Javascript](#javascript?)
 2. [History](#javascript-history)
-3. [JavaScript Working](#how-javascript-works-?)
+3. [JavaScript Working](#how-javascript-works)
 
 # Javascript
 
@@ -32,7 +32,7 @@
 
   </p>
 
-# How JavaScript Works ?
+# How JavaScript Works
 
 - Javascript is Client-Side Script Language . Each browser has JS Engine through which we can run our javascript code.
 
