@@ -8,7 +8,8 @@
 
    1. [Js Engine Architecture](#js-engine-architecture)
 
-      1. [Google V8 Js Engine](#google-chromes-javascript-v8-engine)
+      1. [Google Chrome V8 Js Engine](#google-chromes-javascript-v8-engine)
+      2. [Mozilla Firefox SpiderMonkey Js Engine]
 
 # Javascript
 
@@ -67,3 +68,17 @@ Firstly, raw JavaScript file goes into the Parser.
 4. <b>Profiler</b> :<i> It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler. </i>
 
 5. <b>Compiler</b> :<i> It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code. </i>
+
+### Mozilla’s SpiderMonkey JavaScript Engine
+
+SpiderMonkey is the first Engine created by Brendan Eich, Creator of JavaScript. He created this Engine at Netscape Communication in 1995 and now it is maintained by Mozilla Foundation. We will understand this using an image.
+The Spider Monkey converts the main JS code into the byte code through the compiler, after that the byte code goes into two section Interpreter and JIT Compiler.
+
+<br>
+<b>Mozilla’s SpiderMonkey Engine three things are important which are as follows: </b>
+
+1. <b>Interpreter: </b><i>It is used a switch statement to jump to the appropriate chunk of code for the current instruction. The JS-to-JS function call pushes a JavaScript stack frame without growing the C stack. But since JS-to-C-to-JS call stacks are common, the interpreter is re-entrant</i>
+
+2. <b>IonMonkey JIT Compiler: </b><i>It is mainly used for optimization of code.</i>
+
+3. <b>Garbage collector: </b><i>It is used for claiming the memory used by objects that are no longer used by the program. The GC is a mark-and-sweep, non-conservative collector. It is used to hold the JS objects and the string descriptors.</i>
