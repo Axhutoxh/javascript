@@ -45,7 +45,8 @@
   3. Internet Explorer -> Chakra 🪦(R.i.p)
   4. Safari -> Safari
 
-  Js Engine Architecture
+  ## Js Engine Architecture
+
   Google chrome’s JavaScript V8 engine: Firstly, raw JavaScript file goes into the Parser.
 
   1. Parser: It checks for syntax and semantics. Parser is nothing but a lexical analysis that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST).
