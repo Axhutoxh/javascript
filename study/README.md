@@ -8,6 +8,8 @@
 
    1. [Js Engine Architecture](#js-engine-architecture)
 
+      1. [Google V8 Js Engine](#google-chromes-javascript-v8-engine)
+
 # Javascript
 
 - JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
@@ -44,7 +46,7 @@
 
 <br>
 Popular Browser with their JS Engine
-
+<br>
 1. Google Chrome , Node Js -> V8 Engine
 2. Fire Fox -> Spider Monkey
 3. Internet Explorer -> Chakra 🪦(R.i.p)
@@ -52,7 +54,9 @@ Popular Browser with their JS Engine
 
 ## Js Engine Architecture
 
-<b>Google chrome’s JavaScript V8 engine</b>: Firstly, raw JavaScript file goes into the Parser.
+### Google chrome’s JavaScript V8 engine
+
+Firstly, raw JavaScript file goes into the Parser.
 
 1. <b>Parser</b> : <i> It checks for syntax and semantics. Parser is nothing but a lexical analysis that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST). </i>
 
