@@ -69,6 +69,7 @@ Firstly, raw JavaScript file goes into the Parser.
 
 5. <b>Compiler</b> :<i> It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code. </i>
 
+<hr>
 ### Mozilla’s SpiderMonkey JavaScript Engine
 
 SpiderMonkey is the first Engine created by Brendan Eich, Creator of JavaScript. He created this Engine at Netscape Communication in 1995 and now it is maintained by Mozilla Foundation. We will understand this using an image.
