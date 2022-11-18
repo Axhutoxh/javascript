@@ -52,4 +52,4 @@
   2. Abstract Syntax tree: It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter.
   3. Interpreter: It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again.
   4. Profiler: It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler.
-  5. Compiler: It spits out the most optimized byte code.
+  5. Compiler: It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code
