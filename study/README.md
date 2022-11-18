@@ -41,7 +41,7 @@
 <div align="center">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png" width="800" height="300"   />
 </div>
-
+<br>
 Popular Browser with their JS Engine
 
 1. Google Chrome , Node Js -> V8 Engine
