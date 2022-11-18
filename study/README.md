@@ -41,6 +41,7 @@
 <div align="center">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png" width="800" height="300"   />
 </div>
+
 <br>
 Popular Browser with their JS Engine
 
@@ -51,14 +52,14 @@ Popular Browser with their JS Engine
 
 ## Js Engine Architecture
 
-Google chrome’s JavaScript V8 engine: Firstly, raw JavaScript file goes into the Parser.
+<b>Google chrome’s JavaScript V8 engine</b>: Firstly, raw JavaScript file goes into the Parser.
 
-1. <b>Parser</b> : <i> It checks for syntax and semantics. Parser is nothing but a lexical analysis that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST). </i>
+    1. <b>Parser</b> : <i> It checks for syntax and semantics. Parser is nothing but a lexical analysis that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST). </i>
 
-2. <b>Abstract Syntax tree</b> : <i>It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter. </i>
+    2. <b>Abstract Syntax tree</b> : <i>It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter. </i>
 
-3. <b>Interpreter</b> :<i>It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again. </i>
+    3. <b>Interpreter</b> :<i>It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again. </i>
 
-4. <b>Profiler</b> :<i> It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler. </i>
+    4. <b>Profiler</b> :<i> It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler. </i>
 
-5. <b>Compiler</b> :<i> It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code. </i>
+    5. <b>Compiler</b> :<i> It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code. </i>
