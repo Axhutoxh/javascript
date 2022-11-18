@@ -34,7 +34,7 @@
 
 # How JavaScript Works
 
-- Javascript is Client-Side Script Language . Each browser has JS Engine through which we can run our javascript code.
+- JavaScript is a multi-paradigm prototype-based language, which uses JavaScript Engine such as Chrome’s V8 engine Firefox SpiderMonkey engine and etc. They convert the high level code into machine-readable code which lets computer to perform some specific tasks. We will understand this using an image..
 
   <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png" width="800" height="300"   />
 
@@ -44,3 +44,12 @@
   2. Fire Fox -> Spider Monkey
   3. Internet Explorer -> Chakra 🪦(R.i.p)
   4. Safari -> Safari
+
+  Js Engine Architecture
+  Google chrome’s JavaScript V8 engine: Firstly, raw JavaScript file goes into the Parser.
+
+  1. Parser: It checks for syntax and semantics. Parser is nothing but a lexical analysis that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST).
+  2. Abstract Syntax tree: It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter.
+  3. Interpreter: It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again.
+  4. Profiler: It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler.
+  5. Compiler: It spits out the most optimized byte code.
