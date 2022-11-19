@@ -89,9 +89,22 @@ Firstly, raw JavaScript file goes into the Parser.
 1. <b>Memory Heap -></b> <i>this is where the memory allocation happens.</i>
 2. <b>Call Stack -></b> <i>this is where your stack frames are as your code executes.</i>
 
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/v8Engine/engine.png" width="600"   />
+</div>
+
 <br />
 
 <h3> Call Stack </h3>
+
+1. JavaScript is a single-threaded programming language, which means it has a single Call Stack. Therefore it can do one thing at a time.
+2. The Call Stack is a data structure which records basically where in the program we are. If we step into a function, we put it on the top of the stack. If we return from a function, we pop off the top of the stack. That’s all the stack can do.
+
+Let’s see an example. Take a look at the following code:
+
+      function  add(x,y){
+        return x + y;
+      }
 
 <hr />
 
