@@ -31,9 +31,9 @@
 
   <p float="left">
 
-    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-1.jpg" width="450" />
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/history/javascriptBasic-1.jpg" width="450" />
       &nbsp; &nbsp;
-    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptBasic-2.jpg"  width="450" />
+    <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/history/javascriptBasic-2.jpg"  width="450" />
 
   </p>
 
@@ -42,7 +42,7 @@
 - JavaScript is a multi-paradigm prototype-based language, which uses JavaScript Engine such as Chrome’s V8 engine Firefox SpiderMonkey engine and etc. They convert the high level code into machine-readable code which lets computer to perform some specific tasks. We will understand this using an image..
 
 <div align="center">
-  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png" width="800" height="300"   />
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/javascriptWorking1.png" width="800" height="300"   />
 </div>
 
 <br>
@@ -54,6 +54,10 @@ Popular Browser with their JS Engine
 4. Safari -> Safari
 
 ## Js Engine Architecture
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/JavascriptP1.png" width="800"  />
+</div>
 
 ### Google chrome’s JavaScript V8 engine
 
@@ -68,6 +72,10 @@ Firstly, raw JavaScript file goes into the Parser.
 4. <b>Profiler</b> :<i> It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler. </i>
 
 5. <b>Compiler</b> :<i> It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code. </i>
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/Javascriptv8.png" width="800"  />
+</div>
 
 <hr />
 
@@ -84,3 +92,9 @@ The Spider Monkey converts the main JS code into the byte code through the compi
 2. <b>IonMonkey JIT Compiler: </b><i>It is mainly used for optimization of code.</i>
 
 3. <b>Garbage collector: </b><i>It is used for claiming the memory used by objects that are no longer used by the program. The GC is a mark-and-sweep, non-conservative collector. It is used to hold the JS objects and the string descriptors.</i>
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/JavascriptSpider.png" width="800"  />
+</div>
+
+<hr />
