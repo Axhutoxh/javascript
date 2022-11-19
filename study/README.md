@@ -112,7 +112,9 @@ Let’s see an example. Take a look at the following code:
 
       printAreaOfSquare(6);
 
+<br />
 
+When the engine starts executing this code, the Call Stack will be empty. Afterwards, the steps will be the following:
 
 <hr />
 
