@@ -9,6 +9,9 @@
    1. [Js Engine Architecture](#js-engine-architecture)
 
       1. [Google Chrome V8 Js Engine](#google-chromes-javascript-v8-engine)
+
+         1. [About V8 Js Engine](#about-v8-js-engine)
+
       2. [Mozilla Firefox SpiderMonkey Js Engine](#mozillas-spidermonkey-javascript-engine)
 
 # Javascript
@@ -76,6 +79,19 @@ Firstly, raw JavaScript file goes into the Parser.
 <div align="center">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/Javascriptv8.png" width="800"  />
 </div>
+
+<br>
+
+#### About V8 Js Engine
+
+- The V8 engine consists of two main Components
+
+1. <b>Memory Heap -></b> <i>this is where the memory allocation happens.</i>
+2. <b>Call Stack -></b> <i>this is where your stack frames are as your code executes.</i>
+
+<br />
+
+<h5> Call Stack </h5>
 
 <hr />
 
