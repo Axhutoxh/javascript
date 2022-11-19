@@ -6,6 +6,11 @@
 2. [History](#javascript-history)
 3. [JavaScript Working](#how-javascript-works)
 
+   1. [Js Engine Architecture](#js-engine-architecture)
+
+      1. [Google Chrome V8 Js Engine](#google-chromes-javascript-v8-engine)
+      2. [Mozilla Firefox SpiderMonkey Js Engine](#mozillas-spidermonkey-javascript-engine)
+
 # Javascript
 
 - JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
@@ -34,13 +39,48 @@
 
 # How JavaScript Works
 
-- Javascript is Client-Side Script Language . Each browser has JS Engine through which we can run our javascript code.
+- JavaScript is a multi-paradigm prototype-based language, which uses JavaScript Engine such as Chrome’s V8 engine Firefox SpiderMonkey engine and etc. They convert the high level code into machine-readable code which lets computer to perform some specific tasks. We will understand this using an image..
 
+<div align="center">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/javascriptWorking1.png" width="800" height="300"   />
+</div>
 
-  Popular Browser with their JS Engine
+<br>
+Popular Browser with their JS Engine
+<br>
+1. Google Chrome , Node Js -> V8 Engine
+2. Fire Fox -> Spider Monkey
+3. Internet Explorer -> Chakra 🪦(R.i.p)
+4. Safari -> Safari
 
-  1. Google Chrome , Node Js -> V8 Engine
-  2. Fire Fox -> Spider Monkey
-  3. Internet Explorer -> Chakra 🪦(R.i.p)
-  4. Safari -> Safari
+## Js Engine Architecture
+
+### Google chrome’s JavaScript V8 engine
+
+Firstly, raw JavaScript file goes into the Parser.
+
+1. <b>Parser</b> : <i> It checks for syntax and semantics. Parser is nothing but a lexical analysis that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST). </i>
+
+2. <b>Abstract Syntax tree</b> : <i>It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter. </i>
+
+3. <b>Interpreter</b> :<i>It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again. </i>
+
+4. <b>Profiler</b> :<i> It will check for the repeating code that can be optimized. As soon as, it gets the repeating code, it basically moves the code into compiler. </i>
+
+5. <b>Compiler</b> :<i> It spits out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine’s speed gets improved since profiler and compiler will be producing and updating the optimized byte code. </i>
+
+<hr />
+
+### Mozilla’s SpiderMonkey JavaScript Engine
+
+SpiderMonkey is the first Engine created by Brendan Eich, Creator of JavaScript. He created this Engine at Netscape Communication in 1995 and now it is maintained by Mozilla Foundation. We will understand this using an image.
+The Spider Monkey converts the main JS code into the byte code through the compiler, after that the byte code goes into two section Interpreter and JIT Compiler.
+
+<br>
+<b>Mozilla’s SpiderMonkey Engine three things are important which are as follows: </b>
+
+1. <b>Interpreter: </b><i>It is used a switch statement to jump to the appropriate chunk of code for the current instruction. The JS-to-JS function call pushes a JavaScript stack frame without growing the C stack. But since JS-to-C-to-JS call stacks are common, the interpreter is re-entrant</i>
+
+2. <b>IonMonkey JIT Compiler: </b><i>It is mainly used for optimization of code.</i>
+
+3. <b>Garbage collector: </b><i>It is used for claiming the memory used by objects that are no longer used by the program. The GC is a mark-and-sweep, non-conservative collector. It is used to hold the JS objects and the string descriptors.</i>
