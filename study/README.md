@@ -102,9 +102,17 @@ Firstly, raw JavaScript file goes into the Parser.
 
 Let’s see an example. Take a look at the following code:
 
-      function  add(x,y){
-        return x + y;
+      function  areaOfSquare(x){
+        return x * x;
       }
+
+      function printAreaOfSquare(side){
+        console.log(areaOfSquare(side));
+      }
+
+      printAreaOfSquare(6);
+
+
 
 <hr />
 
