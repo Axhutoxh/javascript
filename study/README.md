@@ -50,7 +50,7 @@
 
 <br>
 Popular Browser with their JS Engine
-<br>
+
 1. Google Chrome , Node Js -> V8 Engine
 2. Fire Fox -> Spider Monkey
 3. Internet Explorer -> Chakra 🪦(R.i.p)
@@ -98,6 +98,7 @@ Firstly, raw JavaScript file goes into the Parser.
 <h3> Call Stack </h3>
 
 1. JavaScript is a single-threaded programming language, which means it has a single Call Stack. Therefore it can do one thing at a time.
+
 2. The Call Stack is a data structure which records basically where in the program we are. If we step into a function, we put it on the top of the stack. If we return from a function, we pop off the top of the stack. That’s all the stack can do.
 
 Let’s see an example. Take a look at the following code:
@@ -115,6 +116,12 @@ Let’s see an example. Take a look at the following code:
 <br />
 
 When the engine starts executing this code, the Call Stack will be empty. Afterwards, the steps will be the following:
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/v8Engine/executionSteps.png" width="850"   />
+</div>
+
+Each entry in the Call Stack is called a Stack Frame.
 
 <hr />
 
