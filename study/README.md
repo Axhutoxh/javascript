@@ -9,6 +9,9 @@
    1. [Js Engine Architecture](#js-engine-architecture)
 
       1. [Google Chrome V8 Js Engine](#google-chromes-javascript-v8-engine)
+
+         1. [About V8 Js Engine](#about-v8-js-engine)
+
       2. [Mozilla Firefox SpiderMonkey Js Engine](#mozillas-spidermonkey-javascript-engine)
 
 # Javascript
@@ -47,7 +50,7 @@
 
 <br>
 Popular Browser with their JS Engine
-<br>
+
 1. Google Chrome , Node Js -> V8 Engine
 2. Fire Fox -> Spider Monkey
 3. Internet Explorer -> Chakra 🪦(R.i.p)
@@ -76,6 +79,49 @@ Firstly, raw JavaScript file goes into the Parser.
 <div align="center">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/Javascriptv8.png" width="800"  />
 </div>
+
+<br>
+
+#### About V8 Js Engine
+
+- The V8 engine consists of two main Components
+
+1. <b>Memory Heap -></b> <i>this is where the memory allocation happens.</i>
+2. <b>Call Stack -></b> <i>this is where your stack frames are as your code executes.</i>
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/v8Engine/engine.png" width="600"   />
+</div>
+
+<br />
+
+<h3> Call Stack </h3>
+
+1. JavaScript is a single-threaded programming language, which means it has a single Call Stack. Therefore it can do one thing at a time.
+
+2. The Call Stack is a data structure which records basically where in the program we are. If we step into a function, we put it on the top of the stack. If we return from a function, we pop off the top of the stack. That’s all the stack can do.
+
+Let’s see an example. Take a look at the following code:
+
+      function  areaOfSquare(x){
+        return x * x;
+      }
+
+      function printAreaOfSquare(side){
+        console.log(areaOfSquare(side));
+      }
+
+      printAreaOfSquare(6);
+
+<br />
+
+When the engine starts executing this code, the Call Stack will be empty. Afterwards, the steps will be the following:
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/assets/engine/v8Engine/executionSteps.png" width="850"   />
+</div>
+
+Each entry in the Call Stack is called a Stack Frame.
 
 <hr />
 
