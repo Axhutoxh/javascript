@@ -6,4 +6,8 @@
 
 # Javascript Basic
 
-[About javascript](https://github.com/Axhutoxh/javascript/blob/main/study/README.md)
+<li>
+    <ul>
+    [About javascript](https://github.com/Axhutoxh/javascript/blob/main/study/README.md)
+    </ul>
+</li>
