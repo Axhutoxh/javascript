@@ -6,8 +6,4 @@
 
 # Javascript Basic
 
-
-- https://github.com/Axhutoxh/javascript/blob/main/study/README.md
-
-
-
+1. [About javascript](https://github.com/Axhutoxh/javascript/blob/main/study/README.md)
