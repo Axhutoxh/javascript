@@ -1,6 +1,6 @@
 # Javascript Study Material
 
-<div style="float-left">Back</div>
+<div style="float:"right"">Back</div>
 # Index
 
 1. [About Javascript](#javascript?)
