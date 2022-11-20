@@ -108,7 +108,8 @@ Let’s see an example. Take a look at the following code:
       }
 
       function printAreaOfSquare(side){
-        console.log(areaOfSquare(side));
+        let r = areaOfSquare(side);
+        console.log(r);
       }
 
       printAreaOfSquare(6);
@@ -123,6 +124,20 @@ When the engine starts executing this code, the Call Stack will be empty. Afterw
 
 Each entry in the Call Stack is called a Stack Frame.
 
+<hr />
+<h3> The RunTime </h3>
+There are APIs in the browser that have been used by almost any JavaScript developer out there (e.g. “setTimeout”). Those APIs, however, are not provided by the Engine.So, we have the Engine but there is actually a lot more. We have those things called Web APIs which are provided by browsers, like the DOM, AJAX, setTimeout and much more.And then, we have the so popular <b>event loop</b> and the <b>callback queue</b>.
+
+<hr />
+<h3> Event Loop </h3>
+
+1. one job is done , Web APIs bind result of that job yo callback function and publishes a message to message queue with that callback.
+2. The only job of event loop is to look at callback queue and once there is something pending in callback queue , push that callback to the stack.
+3. event loop pushes one callback function at a tme , to the stack.
+
+<hr />
+<h3>Why Need Async Process in JS </h3>
+ As We know js is single threaded so it can handle only one task at a time. Now if a Web APIs takes too much time take js engine can not perfprm another task and apllication is stuck at that time to avoid that issue we use async function.
 <hr />
 
 ### Mozilla’s SpiderMonkey JavaScript Engine
