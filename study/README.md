@@ -136,6 +136,9 @@ There are APIs in the browser that have been used by almost any JavaScript devel
 3. event loop pushes one callback function at a tme , to the stack.
 
 <hr />
+<h3>Why Need Async Process in JS </h3>
+ As We know js is single threaded so it can handle only one task at a time. Now if a Web APIs takes too much time take js engine can not perfprm another task and apllication is stuck at that time to avoid that issue we use async function.
+<hr />
 
 ### Mozilla’s SpiderMonkey JavaScript Engine
 
