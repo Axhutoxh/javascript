@@ -130,9 +130,12 @@ There are APIs in the browser that have been used by almost any JavaScript devel
 
 <hr />
 <h3> Event Loop </h3>
-- one job is done , Web APIs bind result of that job yo callback function and publishes a message to message queue with  that callback.
-- The only job of event loop is to look at callback queue and once there is something pending in callback queue , push that callback to the stack.
-- event loop pushes one callback function at a tme , to the stack.
+
+1. one job is done , Web APIs bind result of that job yo callback function and publishes a message to message queue with that callback.
+2. The only job of event loop is to look at callback queue and once there is something pending in callback queue , push that callback to the stack.
+3. event loop pushes one callback function at a tme , to the stack.
+
+<hr />
 
 ### Mozilla’s SpiderMonkey JavaScript Engine
 
