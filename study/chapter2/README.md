@@ -86,21 +86,18 @@ The var keyword is used in all JavaScript code from 1995 to 2015.If you want you
 
       sum();
 
-Users can declare the 2 variables with the same name using the var keyword. Also, the user can reassign the value into the var variable.
+- Users can declare the 2 variables with the same name using the var keyword. Also, the user can reassign the value into the var variable.
 
       var x = 10;
-
-      console.log("value of x is",x);
+      console.log("value of x is",x);   //Output is 10
 
       var x = 100;
+      console.log("value of second variable x",x);  //Output is 100
 
-      console.log("value of second variable x",x);
+      x = 20;
+      console.log("value of x after reassign",x);   //Output is 20
 
-      x = 20
-
-      console.log("value of x after reassign",x);
-
-If users use the var variable before the declaration, it initializes with the undefined value
+- If users use the var variable before the declaration, it initializes with the undefined value
 
       console.log(a);
       var a = 10;
