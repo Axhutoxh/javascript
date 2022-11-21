@@ -24,13 +24,3 @@
 
 <hr />
   <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
-
-var i=0;
-while(i<10){
-console.log(i);
-setTimeout(()=>{
-location.reload();
-i +=1;
-},1000)
-
-}
