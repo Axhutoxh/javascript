@@ -71,4 +71,22 @@ In order to print any string we can use either single quote <b> ' </b>or double 
 
 - Variables are containers for storing data (storing data values).
 
+## var variable
+
+The var keyword is used in all JavaScript code from 1995 to 2015.If you want your code to run in older browsers, you must use var.
+
+- The scope of the var keyword is the global or function scope. It means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function.
+
+  var x = 10;
+
+  function sum(){
+  var y = 5;
+  console.log(x+y);
+  }
+
+  sum()
+
+Users can declare the 2 variables with the same name using the var keyword. Also, the user can reassign the value into the var variable.
+If users use the var variable before the declaration, it initializes with the undefined value
+
 <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
