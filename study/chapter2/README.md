@@ -29,12 +29,16 @@
 
 Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>console</b> menu.
 
-<h3>for best practice set up folder structure like</h3>
+<h3>For best practice set up folder structure like below</h3>
 
     📁 javascriptPractice
         - 📁 css
         - 📁 js
         - 📄 index.html
+
+# hello world program
+
+    console.log('Hello World')
 
 <hr />
   <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
