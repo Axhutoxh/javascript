@@ -6,8 +6,13 @@
 
 # Index
 
-1. [Hello world Program](#?)
-2. [var, let and const variables](#)
+1. [Hello world Program](#hello-world-program)
+2. [variables](#variables)
+
+   1. [var]
+   2. [let]
+   3. [const]
+
 3. [String indexing](#)
 4. [Useful string methods](#)
 5. [Template Strings](#)
@@ -36,7 +41,7 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
         - 📁 js
         - 📄 index.html
 
-# hello world program
+# Hello world program
 
      console.log('Hello World');
 
@@ -53,5 +58,16 @@ In order to print any string we can use either single quote <b> ' </b>or double 
   <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/champ.gif" width="800"  height="500" />
 </div>
 
+# Variables
+
+- In Js there are 4 ways to declare variables
+
+1. Using <b>var</b>
+2. Using <b>let</b>
+3. Using <b>const</b>
+4. Using nothing
+
+<h4>What are Variables?</h4>
+ - Variables are containers for storing data (storing data values).
 
 <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
