@@ -45,7 +45,7 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
      console.log(`multiline
      printing `);
 
-In order to print any string we can use either single quote <b>'</b>or double quote<b>"</b>or backtic<b>`</b>.
+In order to print any string we can use either single quote <b> ' </b>or double quote<b> " </b>or backtic<b> ` </b>.
 
 ![logo](https://github.com/Axhutoxh/javascript/blob/main/assets/fun/champ.gif)
 
