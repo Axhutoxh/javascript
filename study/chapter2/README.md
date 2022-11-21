@@ -52,7 +52,7 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
 
 In order to print any string we can use either single quote <b> ' </b>or double quote<b> " </b>or backtic<b> ` </b>.
 
-<h2>Yahoo completed first task</h2>
+<h2>Yahoo! completed first task</h2>
 
 <div align="center">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/champ.gif" width="800"  height="500" />
@@ -68,6 +68,7 @@ In order to print any string we can use either single quote <b> ' </b>or double 
 4. Using nothing
 
 <h4>What are Variables?</h4>
- - Variables are containers for storing data (storing data values).
+
+- Variables are containers for storing data (storing data values).
 
 <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
