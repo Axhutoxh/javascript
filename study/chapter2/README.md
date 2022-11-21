@@ -38,7 +38,11 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
 
 # hello world program
 
-    console.log('Hello World')
+     console.log('Hello World');
 
-<hr />
-  <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
+     console.log("🔥 ka mai ha mai ha 🔥");
+
+     console.log(`multiline
+     printing `);
+
+<a href="https://github.com/Axhutoxh/javascript"><< Back</a>
