@@ -77,14 +77,14 @@ The var keyword is used in all JavaScript code from 1995 to 2015.If you want you
 
 - The scope of the var keyword is the global or function scope. It means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function.
 
-  var x = 10;
+      var x = 10;
 
-  function sum(){
-  var y = 5;
-  console.log(x+y);
-  }
+      function sum(){
+      var y = 5;
+      console.log(x+y);
+      }
 
-  sum()
+      sum()
 
 Users can declare the 2 variables with the same name using the var keyword. Also, the user can reassign the value into the var variable.
 If users use the var variable before the declaration, it initializes with the undefined value
