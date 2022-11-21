@@ -1,7 +1,7 @@
 # Javascript Study Material
 
 <div dir="rtl">
-  <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
+  <a href="https://github.com/Axhutoxh/javascript">Back >></a>
 </div>
 
 # Index
