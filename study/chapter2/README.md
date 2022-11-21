@@ -47,6 +47,6 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
 
 In order to print any string we can use either single quote <b>'</b>or double quote<b>"</b>or backtic<b>`</b>.
 
-<div class="tenor-gif-embed" data-postid="25750996" data-share-method="host" data-aspect-ratio="1.33333" data-width="100%"><a href="https://tenor.com/view/dragon-ball-z-oozaru-gif-25750996">Dragon Ball Z Oozaru GIF</a>from <a href="https://tenor.com/search/dragon+ball+z-gifs">Dragon Ball Z GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+![logo](https://github.com/Axhutoxh/javascript/blob/main/assets/fun/champ.gif)
 
 <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
