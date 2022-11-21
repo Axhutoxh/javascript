@@ -31,10 +31,10 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
 
 <h3>for best practice set up folder structure like</h3>
 
-    📁javascriptPractice
-        - 📁css
-        - 📁js
-        - 📄index.html
+    📁 javascriptPractice
+        - 📁 css
+        - 📁 js
+        - 📄 index.html
 
 <hr />
   <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
