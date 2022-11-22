@@ -11,7 +11,7 @@
 
    1. [var](#var-variable)
    2. [let](#let-variable)
-   3. [const]
+   3. [const](#const-variable)
 
 3. [String indexing](#)
 4. [Useful string methods](#)
