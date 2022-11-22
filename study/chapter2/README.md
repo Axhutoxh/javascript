@@ -254,9 +254,9 @@ The const keyword has all the properties that are the same as the let keyword, e
 
 # Strings
 
-string is a data type whic is used to store collection of character in it.
+String is a data type which is used to store collection of character in it.
 
-a string indexing start with 0 and end to length of string-1;
+a string indexing start with 0 and end to the size of string-1;
 
         let firstName = "Gohan";
 
@@ -268,18 +268,19 @@ a string indexing start with 0 and end to length of string-1;
         console.log("Printing h ");
         console.log(firstName[2]);  //output is h
 
-- In order to print last element of a string use <b>string.length method -1 </b>
+- In order to print last element of a string use <b>string.length -1 </b>
 
         console.log(firstName[firstName.length -1]);
 
-- space is also part of string .suppose we have a below string;
+- space is also part of string . suppose we have a below string;
 
         let firstName = "   Gohan   "
 
         console.log(firstName.length) //output is 11
 
   output of above code is 11 because we have 6 space and 5 character .
-  to avoid such space we have a string method <b>trim</b>
+
+  to avoid such spaces we have a string method <b>trim</b>
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
