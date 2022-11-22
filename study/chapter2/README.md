@@ -9,7 +9,7 @@
 1. [Hello world Program](#hello-world-program)
 2. [variables](#variables)
 
-   1. [var]
+   1. [var](#var-variable)
    2. [let]
    3. [const]
 
@@ -101,5 +101,44 @@ The var keyword is used in all JavaScript code from 1995 to 2015.If you want you
 
       console.log(a);
       var a = 10;
+
+## let variable
+
+The let keyword is an improved version of the var keyword.
+
+- The scope of a let variable is only block scoped. It can’t be accessible outside the particular block
+
+      let a = 10;
+      function scope() {
+      if (true) {
+      let b = 20;
+      console.log(20); // It prints 20
+      }
+      console.log(b); // It gives error as it defined in if block
+
+      }
+      scope()
+      console.log(a) // It prints 10
+
+- Users cannot re-declare the variable defined with the let keyword but can update it.
+
+      let a=10;
+      let a=5; // It is not allowed
+
+      a = 8; //It is allowed
+
+- Users can declare the variable with the same name in different blocks using the let keyword.
+
+      let a = 10
+      if (true) {
+        let a=9
+        console.log(a) // It prints 9
+      }
+      console.log(a) // It prints 10
+
+- If users use the let variable before the declaration, it does not initialize with undefined just like a var variable, and returns an error.
+
+       console.log(a);  // Cannot access 'a' before initialization
+       let a = 10;
 
 <a href="https://github.com/Axhutoxh/javascript"><< Back</a>

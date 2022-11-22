@@ -25,7 +25,7 @@ x = 20;
 
 console.log("value of x after reassign", x);
 
-console.log("\n  If users use the var variable before the declaration");
+console.log("\nIf users use the var variable before the declaration");
 
 console.log(a);
 var a = 10;
