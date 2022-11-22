@@ -282,6 +282,13 @@ a string indexing start with 0 and end to the size of string-1;
 
   to avoid such spaces we have a string method <b>trim</b>
 
+          firstName = firstName.trim();
+          console.log(firstName.length) //output is 5
+
+  if we don't re-assin the trim value to variable then the result will be 11.
+
+  because string is immutable so in order to value get's updated we have initialise the updated value to same variable or new variable.
+
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
