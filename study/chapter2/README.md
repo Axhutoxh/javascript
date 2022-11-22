@@ -345,6 +345,12 @@ Synonyms:
 
         let text = `Welcome ${firstName}, ${lastName}!`;
 
+<h2>Congratulation! You completed Basic of variables and String</h2>
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/gohan.gif" width="800"  height="500" />
+</div>
+
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
