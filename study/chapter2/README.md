@@ -6,6 +6,7 @@
 
 # Index
 
+0. [JavaScript Style Guide](#javascript-style-guide)
 1. [Hello world Program](#hello-world-program)
 2. [variables](#variables)
 
@@ -40,6 +41,86 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
         - 📁 css
         - 📁 js
         - 📄 index.html
+
+<div align="center">
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/master.gif" width="800"  height="500" />
+</div>
+
+# JavaScript Style Guide
+
+Coding conventions secure quality:
+
+- Improve code readability
+- Make code maintenance easier
+
+<h3>Variable Names</h3>
+
+1. use camelCase for identifier names (variables and functions).
+2. All names start with a letter.
+
+   variableExample = "DBZ";
+   example = "dbz";
+
+3. Always put spaces around operators ( = + - \* / ), and after commas
+
+   let sum = x + y;
+
+4. Always use 2 spaces for indentation of code blocks:
+
+   function codeIndentation(){
+   return 'Dbz';
+   }
+
+- Do not use tabs (tabulators) for indentation. Different editors interpret tabs differently.
+
+5. Always end a simple statement with a semicolon.
+
+   const dbzCharacter = ["goku", "vegita", "bulma"];
+
+   const characterDetail = {
+   firstName: 'Son',
+   lastName: 'Goku',
+   age: 38,
+   eyeColor: ['red', 'black', 'blue', 'grey']
+   };
+
+General rules for complex (compound) statements
+
+- Put the opening bracket at the end of the first line.
+- Use one space before the opening bracket.
+- Put the closing bracket on a new line, without leading spaces.
+- Do not end a complex statement with a semicolon.
+
+General rules for object definitions
+
+- Place the opening bracket on the same line as the object name.
+- Use colon plus one space between each property and its value.
+- Use quotes around string values, not around numeric values.
+- Do not add a comma after the last property-value pair.
+- Place the closing bracket on a new line, without leading spaces.
+- Always end an object definition with a semicolon.
+
+<h3>Naming Conventions</h3>
+Always use the same naming convention for all your code. For example:
+
+- Variable and function names written as camelCase
+- Global variables written in UPPERCASE (We don't, but it's quite common)
+- Constants (like PI) written in UPPERCASE
+
+Hyphens in HTML and CSS:
+
+1. HTML5 attributes can start with data- (data-quantity, data-price).
+
+2. CSS uses hyphens in property-names (font-size).
+
+- Hyphens can be mistaken as subtraction attempts. Hyphens are not allowed in JavaScript names.
+
+1. Many programmers prefer to use underscores (date_of_birth), especially in SQL databases.
+2. Underscores are often used in PHP documentation
+3. PascalCase is often preferred by C programmers.
+4. camelCase is used by JavaScript itself, by jQuery, and other JavaScript libraries.
+
+<br>
 
 # Hello world program
 
