@@ -58,8 +58,8 @@ Coding conventions secure quality:
 1. use camelCase for identifier names (variables and functions).
 2. All names start with a letter.
 
-   variableExample = "DBZ";
-   example = "dbz";
+    variableExample = "DBZ";
+    example = "dbz";
 
 3. Always put spaces around operators ( = + - \* / ), and after commas
 
