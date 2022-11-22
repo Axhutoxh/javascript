@@ -1,4 +1,5 @@
 # Javascript Keywords
+
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
@@ -6,16 +7,15 @@
 
 # Index
 
-0. [JavaScript Style Guide](#javascript-style-guide)
-1. [Hello world Program](#hello-world-program)
-2. [variables](#variables)
+1. [JavaScript Style Guide](#javascript-style-guide)
+2. [Hello world Program](#hello-world-program)
+3. [variables](#variables)
 
    1. [var](#var-variable)
    2. [let](#let-variable)
    3. [const](#const-variable)
 
-3. [String indexing](#)
-4. [Useful string methods](#)
+4. [Strings](#)
 5. [Template Strings](#)
 6. [Null, undefined, Bigint, typeof](#)
 7. [Booleans and comparison Operator](#)
@@ -55,17 +55,17 @@ Coding conventions secure quality:
 
 <h3>Variable Names</h3>
 
-1. use camelCase for identifier names (variables and functions).
-2. All names start with a letter.
+1.  use camelCase for identifier names (variables and functions).
+2.  All names start with a letter.
 
         variableExample = "DBZ";
         example = "dbz";
 
-3. Always put spaces around operators ( = + - \* / ), and after commas
+3.  Always put spaces around operators ( = + - \* / ), and after commas
 
         let sum = x + y;
 
-4. Always use 2 spaces for indentation of code blocks:
+4.  Always use 2 spaces for indentation of code blocks:
 
         function codeIndentation(){
         return 'Dbz';
@@ -73,7 +73,7 @@ Coding conventions secure quality:
 
 - Do not use tabs (tabulators) for indentation. Different editors interpret tabs differently.
 
-5. Always end a simple statement with a semicolon.
+5.  Always end a simple statement with a semicolon.
 
         const dbzCharacter = ["goku", "vegita", "bulma"];
 
@@ -237,22 +237,51 @@ The const keyword has all the properties that are the same as the let keyword, e
 
 - Users cannot change the properties of the const object, but they can change the value of the properties of the const object.
 
-      const dbz = {
-      data1 : 'goku',
-      data2 : 'vegita'
-      }
+        const dbz = {
+        data1 : 'goku',
+        data2 : 'vegita'
+        }
 
-      dbz.data1 = 'kakrot is goku'; //It is allowed
+        dbz.data1 = 'kakrot is goku'; //It is allowed
 
-      // It is not allowed
-      dbz = {
-        datax: 'pikachu',
-        datay: 'ash'
-      }
-<hr />
+        // It is not allowed
+        dbz = {
+          datax: 'pikachu',
+          datay: 'ash'
+        }
+
+  <hr />
+
+# Strings
+
+string is a data type whic is used to store collection of character in it.
+
+a string indexing start with 0 and end to length of string-1;
+
+        let firstName = "Gohan";
+
+        // G o h a n
+        // 0 1 2 3 4
+
+- In above code if you want to print particular character in string use the character indexing;
+
+        console.log("Printing h ");
+        console.log(firstName[2]);  //output is h
+
+- In order to print last element of a string use <b>string.length method -1 </b>
+
+        console.log(firstName[firstName.length -1]);
+
+- space is also part of string .suppose we have a below string;
+
+        let firstName = "   Gohan   "
+
+        console.log(firstName.length) //output is 11
+
+  output of above code is 11 because we have 6 space and 5 character .
+  to avoid such space we have a string method <b>trim</b>
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
   <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/README.md"><< Back</a>
-
