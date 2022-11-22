@@ -10,7 +10,7 @@
 2. [variables](#variables)
 
    1. [var](#var-variable)
-   2. [let]
+   2. [let](#let-variable)
    3. [const]
 
 3. [String indexing](#)
@@ -60,12 +60,11 @@ In order to print any string we can use either single quote <b> ' </b>or double 
 
 # Variables
 
-- In Js there are 4 ways to declare variables
+- In Js there are 3 ways to declare variables
 
 1. Using <b>var</b>
 2. Using <b>let</b>
 3. Using <b>const</b>
-4. Using nothing
 
 <h4>What are Variables?</h4>
 
@@ -140,5 +139,34 @@ The let keyword is an improved version of the var keyword.
 
        console.log(a);  // Cannot access 'a' before initialization
        let a = 10;
+
+## const variable
+
+The const keyword has all the properties that are the same as the let keyword, except the user cannot update it.
+
+- When users declare a const variable, they need to initialize it, otherwise, it returns an error. The user cannot update the const variable once it is declared.
+
+      const a = 10;
+      function scope(){
+        a = 9;
+        console.log(a); //TypeError:Assignment to constant variable.
+      }
+
+      scope();
+
+- Users cannot change the properties of the const object, but they can change the value of the properties of the const object.
+
+      const dbz = {
+      data1 : 'goku',
+      data2 : 'vegita'
+      }
+
+      dbz.data1 = 'kakrot is goku'; //It is allowed
+
+      // It is not allowed
+      dbz = {
+        datax: 'pikachu',
+        datay: 'ash'
+      }
 
 <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
