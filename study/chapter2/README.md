@@ -1,8 +1,8 @@
 # Javascript Keywords
-
 <div dir="rtl">
-  <a href="https://github.com/Axhutoxh/javascript"> Back >></a>
+    <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
+  <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/README.md"><< Back</a>
 
 # Index
 
@@ -249,5 +249,10 @@ The const keyword has all the properties that are the same as the let keyword, e
         datax: 'pikachu',
         datay: 'ash'
       }
+<hr />
 
-<a href="https://github.com/Axhutoxh/javascript"><< Back</a>
+<div dir="rtl">
+    <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
+</div>
+  <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter1/README.md"><< Back</a>
+
