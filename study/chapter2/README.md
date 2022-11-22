@@ -16,7 +16,7 @@
    3. [const](#const-variable)
 
 4. [Strings](#strings)
-5. [Template Strings](#)
+5. [Template Strings](#javascript-template-literals)
 6. [Null, undefined, Bigint, typeof](#)
 7. [Booleans and comparison Operator](#)
 8. [Truthy and Falsy Values](#)
