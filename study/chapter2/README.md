@@ -15,7 +15,7 @@
    2. [let](#let-variable)
    3. [const](#const-variable)
 
-4. [Strings](#)
+4. [Strings](#strings)
 5. [Template Strings](#)
 6. [Null, undefined, Bigint, typeof](#)
 7. [Booleans and comparison Operator](#)
