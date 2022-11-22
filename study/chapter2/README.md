@@ -58,31 +58,31 @@ Coding conventions secure quality:
 1. use camelCase for identifier names (variables and functions).
 2. All names start with a letter.
 
-    variableExample = "DBZ";
-    example = "dbz";
+        variableExample = "DBZ";
+        example = "dbz";
 
 3. Always put spaces around operators ( = + - \* / ), and after commas
 
-   let sum = x + y;
+        let sum = x + y;
 
 4. Always use 2 spaces for indentation of code blocks:
 
-   function codeIndentation(){
-   return 'Dbz';
-   }
+        function codeIndentation(){
+        return 'Dbz';
+        }
 
 - Do not use tabs (tabulators) for indentation. Different editors interpret tabs differently.
 
 5. Always end a simple statement with a semicolon.
 
-   const dbzCharacter = ["goku", "vegita", "bulma"];
+        const dbzCharacter = ["goku", "vegita", "bulma"];
 
-   const characterDetail = {
-   firstName: 'Son',
-   lastName: 'Goku',
-   age: 38,
-   eyeColor: ['red', 'black', 'blue', 'grey']
-   };
+        const characterDetail = {
+        firstName: 'Son',
+        lastName: 'Goku',
+        age: 38,
+        eyeColor: ['red', 'black', 'blue', 'grey']
+        };
 
 General rules for complex (compound) statements
 
