@@ -43,7 +43,7 @@ Open any browser press <b>Ctrl+Shift+i</b> to open inspector and click on <b>con
         - 📄 index.html
 
 <div align="center">
-  <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/master.gif" width="800"  height="500" />
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/master.gif" width="800"  height="400" />
 </div>
 
 # JavaScript Style Guide
