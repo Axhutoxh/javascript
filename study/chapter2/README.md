@@ -348,7 +348,7 @@ Synonyms:
 <h2>Congratulation! You completed Basic of variables and String</h2>
 
 <div align="center">
-  <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/gohan.gif" width="800"  height="500" />
+  <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/gohan.gif" width="800"  height="400" />
 </div>
 
 <div dir="rtl">
