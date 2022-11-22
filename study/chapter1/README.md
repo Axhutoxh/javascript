@@ -1,8 +1,9 @@
 # Javascript Study Material
 
 <div dir="rtl">
-  <a href="https://github.com/Axhutoxh/javascript">Back >></a>
+    <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
+  <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
 
 # Index
 
@@ -163,4 +164,7 @@ The Spider Monkey converts the main JS code into the byte code through the compi
 </div>
 
 <hr />
+<div dir="rtl">
+    <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
+</div>
   <a href="https://github.com/Axhutoxh/javascript"><< Back</a>
