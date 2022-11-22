@@ -285,7 +285,7 @@ a string indexing start with 0 and end to the size of string-1;
           firstName = firstName.trim();
           console.log(firstName.length) //output is 5
 
-  if we don't re-assin the trim value to variable then the result will be 11.
+  if we don't re-assing the trim value then the result will be 11.
 
   because string is immutable so in order to value get's updated we have initialise the updated value to same variable or new variable.
 
