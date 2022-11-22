@@ -289,6 +289,62 @@ a string indexing start with 0 and end to the size of string-1;
 
   because string is immutable so in order to value get's updated we have initialise the updated value to same variable or new variable.
 
+  <h4>String toUpperCase()</h4>
+
+          let small = 'abcd'
+
+          let upper = small.toUpperCase();
+          console.log(upper) // Output ABCD
+
+  <h4>String toLowerCase()</h4>
+
+          let upper = 'ABCD';
+
+          let small = upper.toLowerCase();
+          console.log(small); // Output abcd
+
+  <h4>String slice()</h4>
+
+  - extracts a part of a string and returns the extracted part in a new string.
+  - The method takes 2 parameters: start position, and end position (end not included).
+
+          let text = "Goku, Gohan, Gotan";
+          let part = text.slice(6, 11); //Output Gohan
+
+# JavaScript Template Literals
+
+Synonyms:
+
+- Template Literals
+- Template Strings
+- String Templates
+- Back-Tics Syntax
+
+<h4><i>Template Literals use back-ticks (``) rather than the quotes ("") to define a string</i></h4>
+
+- With template literals, you can use both single and double quotes inside a string
+
+        let text = `He's often called "Kakrot"`; //He's often called "Kakrot"
+
+- Template literals allows multiline strings
+
+        let text =
+                  `The quick
+                  brown fox
+                  jumps over
+                  the lazy dog`;
+
+- Template literals provide an easy way to interpolate variables and expressions into strings.The method is called string interpolation.
+
+        ${...}
+
+- Template literals allow variables in strings
+
+        let firstName = "Son";
+        let lastName = "Goku";
+
+        let text = `Welcome ${firstName}, ${lastName}!`;
+
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
