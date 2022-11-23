@@ -392,7 +392,7 @@ Synonyms:
 
 - A Symbol is a unique and immutable primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.
 
-<h4>In js we typeof operator to check the datatypes of a variable</h4>
+<h4>In J.S  we have 'typeof' operator to check the datatypes of a variable</h4>
 
         let s = 'abcd' ;
         let n = 10 ;
