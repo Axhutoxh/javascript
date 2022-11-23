@@ -351,6 +351,49 @@ Synonyms:
   <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/gohan.gif" width="800"  height="400" />
 </div>
 
+# Data types (primitive data types)
+
+1. Null
+2. Undefined
+3. Boolean
+4. Number
+5. BigInt
+6. String
+7. Symbol
+
+## Null
+
+- The Null type is inhabited by exactly one value: null.
+
+## undefined
+
+- The Undefined type is inhabited by exactly one value: undefined.
+- Conceptually, undefined indicates the absence of a value, while null indicates the absence of an object (which could also make up an excuse for typeof null === "object").
+
+## boolean
+
+- The Boolean type represents a logical entity and is inhabited by two values: true and false.
+- Boolean values are usually used for conditional operations, including ternary operators, if...else, while, etc.
+
+## Number
+
+- The Number type is a double-precision 64-bit binary format IEEE 754 value. It is capable of storing positive floating-point numbers between 2-1074 (Number.MIN_VALUE) and 21024
+- (Number.MAX_VALUE) as well as negative floating-point numbers between -2-1074 and -21024, but it can only safely store integers in the range -(253 − 1) (Number.MIN_SAFE_INTEGER) to 253 − 1 (Number.MAX_SAFE_INTEGER).
+
+## BigInt
+
+- The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary magnitude. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit (Number.MAX_SAFE_INTEGER) for Numbers.
+
+## Strings
+
+- JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it. String methods create new strings based on the content of the current string
+
+## Symbol
+
+- A Symbol is a unique and immutable primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.
+
+<h3>In js we typeof operator to check the datatypes of a variable</h3>
+
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
 </div>
