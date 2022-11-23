@@ -17,7 +17,7 @@
 
 4. [Strings](#strings)
 5. [Template Strings](#javascript-template-literals)
-6. [Null, undefined, Bigint, typeof](#)
+6. [Null, undefined, Bigint, typeof](#data-types-primitive-data-types)
 7. [Booleans and comparison Operator](#)
 8. [Truthy and Falsy Values](#)
 9. [If else statement](#)
@@ -392,7 +392,21 @@ Synonyms:
 
 - A Symbol is a unique and immutable primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.
 
-<h3>In js we typeof operator to check the datatypes of a variable</h3>
+<h4>In js we typeof operator to check the datatypes of a variable</h4>
+
+        let s = 'abcd' ;
+        let n = 10 ;
+        let b = true;
+        let v = null;
+        let u ;
+        let sy ='😃'
+
+        console.log(typeof(s));  //string
+        console.log(typeof(n));  //number
+        console.log(typeof(b));  //boolean
+        console.log(typeof(v));  //object
+        console.log(typeof(u));  //undefined
+        console.log(typeof(sy)); //string
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
