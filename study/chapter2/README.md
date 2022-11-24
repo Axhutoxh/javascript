@@ -20,13 +20,11 @@
 6. [Null, undefined, Bigint, typeof](#data-types-primitive-data-types)
 7. [Booleans and comparison Operator](#comparison-operator)
 8. [Truthy and Falsy Values](#truthy-and-falsy-values)
-9. [If else statement](#)
-10. [Ternary Operator](#)
-11. [&& || operator](#)
-12. [Nested if else, If elseif else](#)
-13. [Switch statement](#)
-14. [While loop, for loop, Do while loop, forEach loop](#)
-15. [Break and continue keyword](#)
+9. [If, else, If elseif else statement](#conditional-statements)
+10. [&& || operator](#)
+11. [Switch statement](#)
+12. [While loop, for loop, Do while loop, forEach loop](#)
+13. [Break and continue keyword](#)
 
 <h3>Basic Setup to Run Javascript code</h3>
  Either you have any browser in Your System or have Nodejs server
@@ -484,6 +482,36 @@ Synonyms:
 
         if ("") {
           // Not reachable
+        }
+
+# Conditional Statements
+
+- Use 'if' to specify a block of code to be executed, if a specified condition is true
+- Use 'else' to specify a block of code to be executed, if the same condition is false
+- Use 'else if' to specify a new condition to test, if the first condition is false
+
+Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+
+        if (condition) {
+          //  block of code to be executed if the condition is true
+        }
+
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+        if (condition) {
+          //  block of code to be executed if the condition is true
+        } else {
+          //  block of code to be executed if the condition is false
+        }
+
+Use the else if statement to specify a new condition if the first condition is false.
+
+        if (condition1) {
+          //  block of code to be executed if condition1 is true
+        } else if (condition2) {
+          //  block of code to be executed if the condition1 is false and condition2 is true
+        } else {
+          //  block of code to be executed if the condition1 is false and condition2 is false
         }
 
 <div dir="rtl">
