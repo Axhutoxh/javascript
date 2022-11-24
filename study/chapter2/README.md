@@ -18,7 +18,7 @@
 4. [Strings](#strings)
 5. [Template Strings](#javascript-template-literals)
 6. [Null, undefined, Bigint, typeof](#data-types-primitive-data-types)
-7. [Booleans and comparison Operator](#)
+7. [Booleans and comparison Operator](#comparison-operator)
 8. [Truthy and Falsy Values](#)
 9. [If else statement](#)
 10. [Ternary Operator](#)
@@ -407,6 +407,21 @@ Synonyms:
         console.log(typeof(v));  //object
         console.log(typeof(u));  //undefined
         console.log(typeof(sy)); //string
+
+# Comparison Operator
+
+        operator        Description
+        ==              equal to
+        ===             equal value and equal type
+        !=              not equal
+        !==             not equal value or not equal type
+        >               greater than
+        >=              greater than or equal to
+        <               less than
+        <=              less than or equal to
+        ?               ternary operator
+
+# truthy and falsy values
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
