@@ -18,15 +18,13 @@
 4. [Strings](#strings)
 5. [Template Strings](#javascript-template-literals)
 6. [Null, undefined, Bigint, typeof](#data-types-primitive-data-types)
-7. [Booleans and comparison Operator](#)
-8. [Truthy and Falsy Values](#)
-9. [If else statement](#)
-10. [Ternary Operator](#)
-11. [&& || operator](#)
-12. [Nested if else, If elseif else](#)
-13. [Switch statement](#)
-14. [While loop, for loop, Do while loop, forEach loop](#)
-15. [Break and continue keyword](#)
+7. [Booleans and comparison Operator](#comparison-operator)
+8. [Truthy and Falsy Values](#truthy-and-falsy-values)
+9. [If, else, If elseif else statement](#conditional-statements)
+10. [&& || operator](#)
+11. [Switch statement](#)
+12. [While loop, for loop, Do while loop, forEach loop](#)
+13. [Break and continue keyword](#)
 
 <h3>Basic Setup to Run Javascript code</h3>
  Either you have any browser in Your System or have Nodejs server
@@ -407,6 +405,114 @@ Synonyms:
         console.log(typeof(v));  //object
         console.log(typeof(u));  //undefined
         console.log(typeof(sy)); //string
+
+# Comparison Operator
+
+        operator        Description
+
+        ==              equal to
+        ===             equal value and equal type
+        !=              not equal
+        !==             not equal value or not equal type
+        >               greater than
+        >=              greater than or equal to
+        <               less than
+        <=              less than or equal to
+        ?               ternary operator
+
+# truthy and falsy values
+
+## Truthy
+
+- In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN
+
+        if (true)
+        if ({})
+        if ([])
+        if (42)
+        if ("0")
+        if ("false")
+        if (new Date())
+        if (-42)
+        if (12n)
+        if (3.14)
+        if (-3.14)
+        if (Infinity)
+        if (-Infinity)
+
+- If the first object is truthy, the logical AND operator returns the second operand:
+
+        true && "dog"
+        // returns "dog"
+
+        [] && "dog"
+        // returns "dog"
+
+## Falsy
+
+- A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
+
+        if (false) {
+          // Not reachable
+        }
+
+        if (null) {
+          // Not reachable
+        }
+
+        if (undefined) {
+          // Not reachable
+        }
+
+        if (0) {
+          // Not reachable
+        }
+
+        if (-0) {
+          // Not reachable
+        }
+
+        if (0n) {
+          // Not reachable
+        }
+
+        if (NaN) {
+          // Not reachable
+        }
+
+        if ("") {
+          // Not reachable
+        }
+
+# Conditional Statements
+
+- Use 'if' to specify a block of code to be executed, if a specified condition is true
+- Use 'else' to specify a block of code to be executed, if the same condition is false
+- Use 'else if' to specify a new condition to test, if the first condition is false
+
+Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+
+        if (condition) {
+          //  block of code to be executed if the condition is true
+        }
+
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+        if (condition) {
+          //  block of code to be executed if the condition is true
+        } else {
+          //  block of code to be executed if the condition is false
+        }
+
+Use the else if statement to specify a new condition if the first condition is false.
+
+        if (condition1) {
+          //  block of code to be executed if condition1 is true
+        } else if (condition2) {
+          //  block of code to be executed if the condition1 is false and condition2 is true
+        } else {
+          //  block of code to be executed if the condition1 is false and condition2 is false
+        }
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
