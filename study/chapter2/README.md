@@ -19,7 +19,7 @@
 5. [Template Strings](#javascript-template-literals)
 6. [Null, undefined, Bigint, typeof](#data-types-primitive-data-types)
 7. [Booleans and comparison Operator](#comparison-operator)
-8. [Truthy and Falsy Values](#)
+8. [Truthy and Falsy Values](#truthy-and-falsy-values)
 9. [If else statement](#)
 10. [Ternary Operator](#)
 11. [&& || operator](#)
@@ -411,6 +411,7 @@ Synonyms:
 # Comparison Operator
 
         operator        Description
+
         ==              equal to
         ===             equal value and equal type
         !=              not equal
@@ -422,6 +423,68 @@ Synonyms:
         ?               ternary operator
 
 # truthy and falsy values
+
+## Truthy
+
+- In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN
+
+        if (true)
+        if ({})
+        if ([])
+        if (42)
+        if ("0")
+        if ("false")
+        if (new Date())
+        if (-42)
+        if (12n)
+        if (3.14)
+        if (-3.14)
+        if (Infinity)
+        if (-Infinity)
+
+- If the first object is truthy, the logical AND operator returns the second operand:
+
+        true && "dog"
+        // returns "dog"
+
+        [] && "dog"
+        // returns "dog"
+
+## Falsy
+
+- A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
+
+        if (false) {
+          // Not reachable
+        }
+
+        if (null) {
+          // Not reachable
+        }
+
+        if (undefined) {
+          // Not reachable
+        }
+
+        if (0) {
+          // Not reachable
+        }
+
+        if (-0) {
+          // Not reachable
+        }
+
+        if (0n) {
+          // Not reachable
+        }
+
+        if (NaN) {
+          // Not reachable
+        }
+
+        if ("") {
+          // Not reachable
+        }
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
