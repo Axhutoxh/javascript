@@ -23,8 +23,8 @@
 9. [If, else, If elseif else statement](#conditional-statements)
 10. [&& || operator](#and-and-or-operator)
 11. [Switch statement](#switch-statement)
-12. [While loop, for loop, Do while loop, forEach loop](#)
-13. [Break and continue keyword](#)
+12. [While loop, for loop, Do while loop, forEach loop](#loops)
+13. [Break and continue keyword](#break-and-continue)
 
 <h3>Basic Setup to Run Javascript code</h3>
  Either you have any browser in Your System or have Nodejs server
