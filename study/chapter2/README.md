@@ -594,7 +594,9 @@ Use the else if statement to specify a new condition if the first condition is f
         }
 
   <b><i>Expression 2 </i></b> defines the condition for executing the code block.
+
   If you omit expression 2, you must provide a break inside the loop
+
   <b><i>Expression 3</i></b> is executed (every time) after the code block has been executed.
 
         let i = 0;
@@ -603,6 +605,136 @@ Use the else if statement to specify a new condition if the first condition is f
         for (; i < len; ) {
         text += cars[i] + "<br>";
         i++;
+        }
+
+### for in loop
+
+- The JavaScript for in statement loops through the properties of an Object
+
+        for (key in object) {
+          // code block to be executed
+        }
+
+        const person = {fname:"John", lname:"Doe", age:25};
+
+        let text = "";
+        for (let x in person) {
+          text += person[x];
+        }
+
+- The for in loop iterates over a person object
+- Each iteration returns a key (x)
+- The key is used to access the value of the key
+- The value of the key is person[x]
+
+### Array.forEach()
+
+- The forEach() method calls a function (a callback function) once for each array element.
+
+          const numbers = [45, 4, 9, 16, 25];
+
+          let txt = "";
+          numbers.forEach(myFunction);
+
+          function myFunction(value, index, array) {
+            txt += value;
+          }
+
+                or
+
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+
+        function myFunction(value) {
+          txt += value;
+        }
+
+  Note that the function takes 3 arguments:
+
+- The item value
+- The item index
+- The array itself
+
+### for of loop
+
+- The JavaScript for of statement loops through the values of an iterable object.
+
+It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more
+
+        for (variable of iterable) {
+          // code block to be executed
+        }
+
+<b>variable</b> - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+
+<b>iterable</b> - An object that has iterable properties.
+
+example
+
+        const cars = ["BMW", "Volvo", "Mini"];
+
+        let text = "";
+        for (let x of cars) {
+          text += x;
+        }
+
+### while loop
+
+- The while loop loops through a block of code as long as a specified condition is true.
+
+        while (condition) {
+          // code block to be executed
+        }
+
+In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:
+
+        while (i < 10) {
+          text += "The number is " + i;
+          i++;
+        }
+
+### Do while loop
+
+- The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+        do {
+          // code block to be executed
+        }
+        while (condition);
+
+The example below uses a do while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested
+
+        do {
+          text += "The number is " + i;
+          i++;
+        }
+        while (i < 10);
+
+# Break and Continue
+
+## Break
+
+- The break statement "jumps out" of a loop.
+
+In the example , the break statement ends the loop ("breaks" the loop) when the loop counter (i) is 2.
+
+        for (let i = 0; i < 10; i++) {
+          if (i === 2) { break; }
+          text += "The number is " + i + "<br>";
+        }
+
+## Continue
+
+- The continue statement "jumps over" one iteration in the loop.
+- The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+This example skips the value of 2:
+
+        for (let i = 0; i < 10; i++) {
+          if (i === 2) { continue; }
+          text += "The number is " + i + "<br>";
         }
 
 <div dir="rtl">
