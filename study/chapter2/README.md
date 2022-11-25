@@ -21,8 +21,8 @@
 7. [Booleans and comparison Operator](#comparison-operator)
 8. [Truthy and Falsy Values](#truthy-and-falsy-values)
 9. [If, else, If elseif else statement](#conditional-statements)
-10. [&& || operator](#)
-11. [Switch statement](#)
+10. [&& || operator](#and-and-or-operator)
+11. [Switch statement](#switch-statement)
 12. [While loop, for loop, Do while loop, forEach loop](#)
 13. [Break and continue keyword](#)
 
@@ -512,6 +512,97 @@ Use the else if statement to specify a new condition if the first condition is f
           //  block of code to be executed if the condition1 is false and condition2 is true
         } else {
           //  block of code to be executed if the condition1 is false and condition2 is false
+        }
+
+# And(&&) and Or(||) operator
+
+## And(&&)
+
+- The logical AND (&&) (logical conjunction) operator for a set of boolean operands will be true if and only if all the operands are true. Otherwise it will be false.
+- More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.
+
+        const a = 3;
+        const b = -2;
+
+        console.log(a > 0 && b > 0);
+        // expected output: false
+
+## Or(||)
+
+- The logical OR (||) (logical disjunction) operator for a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values. When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.
+
+        const a = 3;
+        const b = -2;
+
+        console.log(a > 0 || b > 0);
+        // expected output: true
+
+# Switch statement
+
+- The switch statement is used to perform different actions based on different conditions.
+- Use the switch statement to select one of many code blocks to be executed.
+
+        switch(expression) {
+          case x:
+            // code block
+            break;
+          case y:
+            // code block
+            break;
+          default:
+            // code block
+        }
+
+### This is how it works
+
+- The switch expression is evaluated once.
+- The value of the expression is compared with the values of each case.
+- If there is a match, the associated block of code is executed.
+- If there is no match, the default code block is executed.
+
+# Loops
+
+- Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+## Different Kinds of Loops
+
+- for - loops through a block of code a number of times
+- for/in - loops through the properties of an object
+- for/of - loops through the values of an iterable object
+- while - loops through a block of code while a specified condition is true
+- do/while - also loops through a block of code while a specified condition is true
+
+### for loop
+
+- The for statement creates a loop with 3 optional expressions:
+
+          for (expression 1; expression 2; expression 3) {
+            // code block to be executed
+          }
+
+          for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+           text += cars[i] + "<br>";
+          }
+
+  <b><i>Expression 1 </i></b> is executed (one time) before the execution of the code block.
+
+        let i = 2;
+        let len = cars.length;
+        let text = "";
+        for (; i < len; i++) {
+          text += cars[i] + "<br>";
+        }
+
+  <b><i>Expression 2 </i></b> defines the condition for executing the code block.
+  If you omit expression 2, you must provide a break inside the loop
+  <b><i>Expression 3</i></b> is executed (every time) after the code block has been executed.
+
+        let i = 0;
+        let len = cars.length;
+        let text = "";
+        for (; i < len; ) {
+        text += cars[i] + "<br>";
+        i++;
         }
 
 <div dir="rtl">
