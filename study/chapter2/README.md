@@ -737,7 +737,7 @@ This example skips the value of 2:
           text += "The number is " + i + "<br>";
         }
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/chapter2c.gif"  />
 </div>
 
