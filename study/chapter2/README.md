@@ -736,10 +736,14 @@ This example skips the value of 2:
           if (i === 2) { continue; }
           text += "The number is " + i + "<br>";
         }
+<h3>Congratulations</h3>
+<div >
 
-<div align="right">
+
   <img src="https://github.com/Axhutoxh/javascript/blob/main/assets/fun/chapter2c.gif"  />
-</div>
+
+  </div>
+
 
 <div dir="rtl">
     <a href="https://github.com/Axhutoxh/javascript/blob/main/study/chapter2/README.md"><< Next</a>
