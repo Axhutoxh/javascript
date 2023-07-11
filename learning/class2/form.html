@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+	
+	<body>
+		<section>
+			<h4>Contact</h4>
+			<form action="/submit">
+			<div>
+				<label for="name">Name</label>	
+				<input type="text" placeholder="Enter Your name ..." required name="name" id="name"/>
+			</div>
+			<div>
+				<label for="phone">Phone</label>	
+				<input type="number" placeholder="Enter Your PhoneNumber ..." name="phone" id="phone"/>
+			</div>
+			<div>	
+				<label for="email">Email</label>	
+				<input type="email" placeholder="Enter Your Email ..." name="email" id="email"/>
+			</div>
+			<div>	
+				<label for="query">Message</label>	
+				<textarea placeholder="Enter Your message ..." name="query" id="query"></textarea>
+			</div>
+
+			<div>
+				<label >Course</label>
+				<label >FF1</label>
+				<input type="checkbox" value="FF1" name="course"/>
+				<label >FF2</label>
+				<input type="checkbox" value="FF2" name="course"/>
+				<label >FF3</label>
+				<input type="checkbox" value="FF3" name="course"/>
+			</div>
+
+			<div>
+				<label>
+					Gender:
+				</label>
+				<input type="radio" name="gender" value="male"/>
+				 <label>Male</label>
+				<input type="radio" name="gender" value="female"/>
+				 <label>Female</label>
+			</div>
+
+			<div>
+				<label >Favourite Food :</label>
+				<select name="cook">
+					<option value="piz">Pizza</option>
+					<option value="Bur">Burger</option>
+					<option value="pas">pasta</option>
+					<option value="dos">Dosa</option>
+				</select>
+			</div>
+
+			<div>
+				<button>Submit</button>
+			</div>
+
+			</form>
+		</section>
+	</body>
+</html>

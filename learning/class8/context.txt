@@ -1,0 +1,50 @@
+- Javascript Programming Fundamentals
+- Control statements
+- Operators
+- Arrays
+- Object 
+- Function
+
+
+                        Javascript
+                    
+                Language            web development
+              (Programming)
+
+
+- How do get Javascript ? -- Browser / NodeJS 
+
+- Is javascript Free ? No 
+- Is java and javascript similiar ? No 
+- Single threaded or multi-threaded ? Single 
+- ECMAScript? ES5,ES6?
+
+Storage             DataTypes           Controls            Repeated Work           Functions
+- Container         - Content           - if/else           - loops                 - function
+ (variable)
+
+                Variables
+               (Container)
+
+        - Naming[a-z][A-Z][0-9]_$.> All possible char 
+        - Starting char [a-z][A-Z]_$
+
+
+                        DataTypes
+        
+        Primitive                           Non-primitive
+        - Strings                           - Function
+        - Boolean                           - Array []
+        - number                            - object {}
+        - undefined
+        - Symbol
+
+
+
+
+-javascript
+-java vs javascript
+-javascript is single threaded or multi
+-ECMAScript
+
+-Storage,DataTypes,Controls,repeated work,functions

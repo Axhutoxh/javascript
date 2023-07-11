@@ -1,0 +1,27 @@
+- parlour
+- Css
+- How to use Css ?
+- Selector
+- Color Property
+- font Property
+
+CSS(Cascading Style Sheet)
+1. What ?
+   - Cutting Hair ?
+   - Color
+   - background Color
+   - width
+   - height
+
+2. Where ?
+   - Head ? 
+   - id => #name{}
+   - class => .name{}
+   - element => dl{}
+
+3. How ?
+   - Style - Dhoni
+   - red,black,
+   - red,black
+   - 200px,%,em 
+

@@ -1,0 +1,24 @@
+
+-DOM (Document Object Model)
+-Read 
+-Update 
+-Create 
+-Delete 
+-Listeners 
+
+                                Programming 
+HTML  ->  CSS -> JavaScript 
+                                Development
+
+
+                    
+                    DOM
+
+            (Document Object Model) 
+
+
+Read                      Write        Update        Delete
+-getElementById
+-getElementsByClassName
+-getElementsByTagName
+-getElementsByClass

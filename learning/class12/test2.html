@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .cell {
+            border: 1px solid;
+            margin: auto;
+            margin-top: 10rem;
+            height: 20rem;
+            width: 20rem;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cell" onmouseover="bringJail()" onmouseout="removeJail()"></div>
+
+</body>
+<script>
+    const cellRef = document.getElementsByClassName('cell');
+
+    function bringJail(){
+                cellRef.style.background=`url('data:image/png;base64,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')`
+      
+    }
+
+    function removeJail(){
+        
+    }
+
+    // cellRef.addEventListener('mouseover',(e) => {
+    //     cellRef.style.background=`url('data:image/png;base64,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')`
+      
+    // })
+    // cellRef.addEventListener('mouseout',(e) => {
+    //     cellRef.style.background='none'
+    // })
+
+    // Write your JS program here
+</script>
+</html>

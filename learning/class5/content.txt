@@ -1,0 +1,7 @@
+Class
+-Layout:flex 
+-Media query 
+
+
+justify-content: main axis (x) 
+align-items: cross axis(y)
