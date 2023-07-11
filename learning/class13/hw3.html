@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="all">Remove All</button>
+    <ul>
+        <li>
+            <p>Task - 1</p>
+            <button>delete</button>
+        </li>
+        <li>
+            <p>Task - 2</p>
+            <button>delete</button>
+        </li>
+        <li>
+            <p>Task - 3</p>
+            <button>delete</button>
+        </li>
+        <li>
+            <p>Task - 4</p>
+            <button>delete</button>
+        </li>
+    </ul>
+    <script>
+        const removeAllRef = document.querySelector('#all');
+        const ulListRef = document.querySelector('ul')
+        const liListRef = document.querySelectorAll('li')
+
+        removeAllRef.addEventListener('click',(e)=>{
+            ulListRef.style.display='none'
+        })
+
+        liListRef.forEach((liRef)=>{
+            liRef.querySelector('button').addEventListener('click',(e)=>{
+                liRef.style.display='none'
+            })
+        })
+        // Write your JS program here =========
+    </script>
+</body>
+
+</html>

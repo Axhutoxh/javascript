@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+
+            .container {
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                gap:10px;
+                flex-wrap: wrap;
+            }
+
+     
+
+            .box1{
+                background-color: aqua;
+            }
+
+            .box2{
+                background-color: rgb(0, 255, 200);
+            }
+
+            .box3{
+                background-color: rgb(0, 255, 128);
+            }
+
+            .box4{
+                background-color: rgb(0, 26, 255);
+            }
+
+            .box5{
+                background-color: rgb(255, 0, 157);
+            }
+
+            .box6{
+                background-color: rgb(155, 21, 104);
+            }
+
+            @media screen and (min-width:700px){
+                .box1{
+                    flex-grow: 1;
+                    width: auto;
+                    background-color: red;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1 box">Box 1</div>
+            <div class="box2 box">Box 2</div>
+            <!-- <div class="box3 box">Box 3</div>
+            <div class="box4 box">Box 4</div>
+            <div class="box5 box">Box 5</div>
+            <div class="box6 box">Box 6</div> -->
+        </div>
+    </body>
+</html>

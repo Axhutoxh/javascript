@@ -1,0 +1,14 @@
+{
+    "name":"Ashutosh Chandra",
+    "address":{
+        "permanentAddress":{
+            "pincode":203131
+        },
+        "currentAddress":{
+            "pincode":210101
+        }
+    },
+    "techstack":["JS","React","CSS"],
+    "kids":null,
+    "isEmployed":true
+}

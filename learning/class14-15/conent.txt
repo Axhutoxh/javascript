@@ -1,0 +1,25 @@
+- Kanban/Sprint Board
+- Features List 
+- Design 
+- Listing Tasks 
+- Creating Task 
+- Prirtization
+
+
+Sprint board / kanban 
+- 2 weeks (Sprint)
+- Users are assigned n tasks 
+
+
+
+Features 
+- Create Task
+- Listing Tasks
+- assign Priority 
+- Update Task
+- Delete Task 
+- Switching Status 
+- Assign Tasks 
+- changing Pripority 
+- Add Due Date 
+- Capacity

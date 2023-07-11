@@ -1,0 +1,64 @@
+Class 4
+
+- CSS Layout
+- Css box model
+- Box-sizing 
+- Positioning 
+- Overflow
+
+
+block -> has Dimension + auto break
+inline -> has no Dimension + no auto break
+inline-block -> has Dimension + no auto break
+
+
+padding : trlb
+
+            Box-sizing
+
+    border-box          content-box
+    -fixed              - Actual Sum
+    Dimension
+(width+border_padding)
+
+
+positioning
+-static 
+-relative 
+-absolute 
+-fixed
+-sticky 
+-inherit
+
+
+Fundamentals
+distance : top/bottom/right/left
+
+layers: 
+
+
+
+                static           relative            absolute               fixed                   sticky
+
+distance        -no effect      -works               -works                 -works                  -works
+
+layers          -same layer     -different layers    -different layers      -different layers       -different layers 
+
+Maintain        - yes           -yes                 -no                    -no                     - yes 
+original 
+pace
+
+on scroll       -change         -change              -change                -no change               -partial
+position 
+
+staring         -no impact      -0,0 of original     -0,0 wrt first         -0,0 wrt window           -window + other
+postion                         container position    parent with postion 
+                                                      relative 
+                                                      (default:window)
+
+
+Overflow 
+-visible
+-hidden
+-scroll 
+-auto

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>KanBan Board</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="priority-filter">
+                <div class="box p1"></div>
+                <div class="box p2"></div>
+                <div class="box p3"></div>
+                <div class="box p4"></div>
+            </div>
+            <div class="quick-action">
+                <div class="icon add">+</div>
+                <div class="icon del">x</div>
+            </div>
+        </header>
+        <main>
+            <section>
+            <h1 class="heading">Kanban board</h1>
+            <div class="modal">
+                <div class="left-section">
+                    <div class="text-content">
+                        <textarea class="text-area" name="textarea" id="textarea" placeholder="Enter task"></textarea>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="priority-filter">
+                        <div class="box p1"></div>
+                        <div class="box p2"></div>
+                        <div class="box p3"></div>
+                        <div class="box p4 selected"></div>
+                    </div>
+                    <div class="close">x</div>
+                </div>
+
+              
+            </div>
+            <div class="ticket-section">
+                <div class="ticket-container">
+                    <div class="ticket-priority"></div>
+                    <div class="ticket-id"></div>
+                    <div class="ticket-content"></div>
+                    <div class="ticket-lock"></div>
+                </div>
+            </div>
+            <div class="ticket-section">
+                <div class="ticket-container">
+                    <div class="ticket-priority"></div>
+                    <div class="ticket-id"></div>
+                    <div class="ticket-content"></div>
+                    <div class="ticket-lock"></div>
+                </div>
+            </div>
+            <div class="ticket-section">
+                <div class="ticket-container">
+                    <div class="ticket-priority"></div>
+                    <div class="ticket-id"></div>
+                    <div class="ticket-content" contenteditable="true">
+                        <textarea name="textarea" id="content" cols="30" rows="10" value="text"></textarea>
+                      </div>
+                    <div class="ticket-lock"></div>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
