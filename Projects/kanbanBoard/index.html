@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanban Board</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="row space-between">
+        <div class="col logo"> 
+            <img src="./assests/logo/kb.png" class="logo-img" />
+            <div class="logo-text">Kb</div>
+        </div>
+
+        <div class="col toogle-section mx-xl">
+            <div class="row space-between">
+                <div class="col mx-2xl">
+
+                    <button class="btn btn-primary-dark">
+                        <div class="row ">
+                            <i class="material-icons md-12" >add</i>
+                            <div class="create-task-label">Create Task</div>
+                        </div>
+                      </button>
+                </div>
+                  
+                <div class="col"> 
+                  <label class="switch">
+                    <input type="checkbox" style="background-color: #383838;" class="toogle-switch" value="toogle-on" />
+                    <div class="slider round">
+                        <i class="material-icons md-16" style=" margin: 3px 6px 0px;float:right;">dark_mode</i>
+                    </div>
+                  </label>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <main class="row">
+    <section class="nav-box nav-bg-dark"><h4 style="text-align: center;" >Nav Bar is not developed yet</h4></section>
+    <section class="content-box">2</section>
+    </main>
+    <div class="dialog-box hide">
+        <form class="task-data-form">
+            <div class="task-title-section">
+                <label for="title"  class="label-content">Task Title</label> <br>
+                <input type="text" id="title" name="title" class="input-task-field mt-md" />
+            </div>
+            <div class="select-priorityTask-section mt-2lg">   
+               <label for="priority" class="label-content">Select Task Priority</label> <br>
+               <div class="row">
+                   <select id="priority" name="prioritylist" class="select-priority-field border-dark mt-md" >
+                       <option value="4">Very High</option>
+                       <option value="3">High</option>
+                       <option value="2">Medium</option>
+                       <option value="1">Low</option>
+                   </select>
+                   <div class="priority-Color border-dark p4 "></div>
+               </div>
+
+               <div class="task-decription mt-2lg">
+                   <label for="textarea" class="label-content">Task Description</label> <br>
+                   <textarea name="textarea" id="textarea" class="description-area mt-md" ></textarea>
+               </div>
+            </div>
+            <button class="btn btn-primary-dark mt-xl " type="submit">
+                <div class="row">
+                    <div class="create-task-label">Add Task List</div>
+                </div>
+              </button>
+         
+    </form></div>
+    </div>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
