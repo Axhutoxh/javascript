@@ -13,6 +13,7 @@ const taskFormRef = document.querySelector('.task-data-form')
 const taskDescription =document.querySelector('.description-area')
 const statusColRef = document.querySelectorAll('.status-box .col') 
 const tasksBoxRef = document.querySelector('.status-box .col .column .tasks-box')
+const trashTasksBoxRef =document.querySelector('.trash-task-box')
 
 
 const bgLight="#ffffff";
@@ -33,6 +34,7 @@ const task={
 
 
 let tasks;
+let trashTask;
 
 function initializeLocaleStorage() {
     tasks = getTaskFromLocaleStorage() ;
@@ -41,7 +43,10 @@ function initializeLocaleStorage() {
 
         ]
     }
+    trashTask = getTrashTaskFromLocaleStorage()
     renderTaskList(tasks)
+    renderTrashTaskList(task)
+
 }
 
 initializeLocaleStorage()
@@ -59,13 +64,17 @@ function getTaskTicket(task){
     <div class="row space-between mt-lg">
         <i class="material-icons md-10 delete" >delete</i>
         <i class="material-icons md-10 lock" >lock</i>
-        <i class="material-icons md-10 openlock" >lock_open</i>
+
     </div>
 `
 }
 
 function clearList(){
     tasksBoxRef.innerHTML=''
+}
+
+function clearTrashList(){
+    trashTasksBoxRef.innerHTML=''
 }
 
 
@@ -80,12 +89,29 @@ function renderTaskList(taskList){
     })
 }
 
+function renderTrashTaskList(taskList){
+    if(taskList.length)
+    {
+    clearTrashList()
+    taskList.forEach((taskData)=>{
+        const taskDiv = document.createElement('div') 
+        taskDiv.classList.add('task-box')
+        taskDiv.classList.add('bg-light')
+        taskDiv.innerHTML = getTaskTicket(taskData)
+        trashTasksBoxRef.appendChild(taskDiv)
+    })
+}
+}
+
 function storeTaskToLocalStorage(taskList){
     localStorage.setItem('tasks',JSON.stringify(taskList))
 }
 
 function getTaskFromLocaleStorage(){
     return JSON.parse(localStorage.getItem('tasks'))
+}
+function getTrashTaskFromLocaleStorage(){
+    return JSON.parse(localStorage.getItem('trashTasks'))
 }
 
 
