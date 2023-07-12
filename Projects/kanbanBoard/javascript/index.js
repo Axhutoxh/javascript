@@ -4,12 +4,15 @@ const bodyRef = document.querySelector('body')
 const headerRef = document.querySelector('header')
 const createTaskBtn = document.querySelector('.row .col .btn')
 const navBoxRef = document.querySelector('.row .nav-box')
-const dialogBoxRef = document.querySelector('.dialog-box')
+const dialogBoxRef = document.querySelector('.dialog-box ')
+const taskDataBoxRef = document.querySelector('.task-data-form')
 const taskTitleRef = document.querySelector('.task-title-section .input-task-field')
 const priorityRef =document.querySelector('.select-priorityTask-section .row .select-priority-field')
 const priporityColorRef = document.querySelector('.select-priorityTask-section .row .priority-Color')
 const taskFormRef = document.querySelector('.task-data-form')
 const taskDescription =document.querySelector('.description-area')
+const statusColRef = document.querySelectorAll('.status-box .col') 
+const tasksBoxRef = document.querySelector('.status-box .col .column .tasks-box')
 
 
 const bgLight="#ffffff";
@@ -29,10 +32,61 @@ const task={
 }
 
 
-const tasks = [
+let tasks;
 
-]
+function initializeLocaleStorage() {
+    tasks = getTaskFromLocaleStorage() ;
+    if(!tasks){
+        tasks=[
 
+        ]
+    }
+    renderTaskList(tasks)
+}
+
+initializeLocaleStorage()
+
+
+function getTaskTicket(task){
+    return `                
+    <div class="row space-between ">
+        <div class="task-id">${task.id} </div>
+        <div class="task-priority" task-color="p${task.priority}"></div>
+    </div>
+    <div class="task-title mt-sm">${task.title}</div>
+    <hr>
+    <div class="task-description">${task.description} </div>
+    <div class="row space-between mt-lg">
+        <i class="material-icons md-10 delete" >delete</i>
+        <i class="material-icons md-10 lock" >lock</i>
+        <i class="material-icons md-10 openlock" >lock_open</i>
+    </div>
+`
+}
+
+function clearList(){
+    tasksBoxRef.innerHTML=''
+}
+
+
+function renderTaskList(taskList){
+    clearList()
+    taskList.forEach((taskData)=>{
+        const taskDiv = document.createElement('div') 
+        taskDiv.classList.add('task-box')
+        taskDiv.classList.add('bg-light')
+        taskDiv.innerHTML = getTaskTicket(taskData)
+        tasksBoxRef.appendChild(taskDiv)
+    })
+}
+
+function storeTaskToLocalStorage(taskList){
+    localStorage.setItem('tasks',JSON.stringify(taskList))
+}
+
+function getTaskFromLocaleStorage(){
+    return JSON.parse(localStorage.getItem('tasks'))
+}
 
 
 function addIcon(size,name){
@@ -66,13 +120,19 @@ function onBackgroundToogleOn(){
     navBoxRef.classList.remove('nav-bg-dark')
     priporityColorRef.classList.remove('border-dark')
     priorityRef.classList.remove('border-dark')
+    dialogBoxRef.classList.remove('bg-light')
+    taskDataBoxRef.classList.remove('bg-light')
+    removeBackground(statusColRef,'nav-bg-dark')
 
     bodyRef.classList.add('bg-dark')
     createTaskBtn.classList.add('btn-primary-light')
     navBoxRef.classList.add('nav-bg-light')
     priporityColorRef.classList.add('border-light')
     priorityRef.classList.add('border-light')
-   
+    dialogBoxRef.classList.add('bg-dark')
+    taskDataBoxRef.classList.add('bg-dark')
+    addBackground(statusColRef,'nav-bg-light')
+
     appendIconToSlider(sliderRef,iconsData={size:16,name:'light_mode'})
 
 }
@@ -85,14 +145,33 @@ function onBackgroundToogleOff(){
     navBoxRef.classList.remove('nav-bg-light')
     priporityColorRef.classList.remove('border-light')
     priorityRef.classList.remove('border-light')
+    dialogBoxRef.classList.remove('bg-dark')
+    taskDataBoxRef.classList.remove('bg-dark')
+    removeBackground(statusColRef,'nav-bg-light')
 
     bodyRef.classList.add('bg-light')
     createTaskBtn.classList.add('btn-primary-dark')
     navBoxRef.classList.add('nav-bg-dark')
     priporityColorRef.classList.add('border-dark')
     priorityRef.classList.add('border-dark')
+    dialogBoxRef.classList.add('bg-light')
+    taskDataBoxRef.classList.add('bg-light')
+    addBackground(statusColRef,'nav-bg-dark')
 
     appendIconToSlider(sliderRef,iconsData={size:16,name:'dark_mode'})
+}
+
+function removeBackground(parentRef,className){
+    parentRef.forEach((childRef)=>{
+    childRef.classList.remove(className)
+    })
+}
+
+
+function addBackground(parentRef,className){
+    parentRef.forEach((childRef)=>{
+    childRef.classList.add(className)
+})
 }
 
 function addPriorityColor(parentElement,colorCode){
@@ -103,7 +182,7 @@ function addPriorityColor(parentElement,colorCode){
 
 
 function getFormData(){
-    task.id=tasks.length +1
+    task.id='KB' + (new Date()).getTime()
     task.title=taskTitleRef.value
     task.priority=priorityRef.value,
     task.description=taskDescription.value
@@ -122,15 +201,18 @@ function clearCreateTaskValue(){
 
 function showDialogBox(){
     dialogBoxRef.classList.remove('hide')
+    taskDataBoxRef.classList.remove('hide')
 }
 
 function hideDialogBox(){
     dialogBoxRef.classList.add('hide')
+    taskDataBoxRef.classList.add('hide')
 }
 
 
 navBoxRef.addEventListener('dblclick',(e)=>{
     navBoxRef.classList.add('hide')
+    
    
 })
 
@@ -139,7 +221,6 @@ toogleRef.addEventListener('click',(e)=>{
         onBackgroundToogleOn()
     }
     else{
-        
         onBackgroundToogleOff()
     }
     
@@ -163,8 +244,14 @@ priorityRef.addEventListener('change',(e)=>{
 taskFormRef.addEventListener('submit',(e)=>{
     e.preventDefault()
     const formData = getFormData()
-    tasks.push({...formData})
-    clearCreateTaskValue()
+    
+    if(formData.title&&formData.description){
+        tasks.push({...formData})
+        renderTaskList(tasks)
+        storeTaskToLocalStorage(tasks)
+        clearCreateTaskValue()
+    }else
+   
  return true
 })
 
