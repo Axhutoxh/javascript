@@ -40,13 +40,30 @@
     </header>
     <main class="row">
     <section class="nav-box nav-bg-dark"><h4 style="text-align: center;" >Nav Bar is not developed yet</h4></section>
-    <section class="content-box">2</section>
+    <section class="content-box ">
+        <div class="status-box pa-2xl">
+            <div class="col nav-bg-dark">
+                <div class="column">
+                    <div class="block-heading" contentEditable="true">In progress</div><br>
+                    <div class="tasks-box">
+                </div>
+                </div>
+            </div>
+            <div class="col nav-bg-dark">
+                <span class="block-heading" contentEditable="true">In progress</span>
+            </div>
+            <div class="col nav-bg-dark">
+                <span class="block-heading" contentEditable="true">In progress</span>
+            </div>
+        </div>
+        </section>
     </main>
-    <div class="dialog-box hide">
-        <form class="task-data-form">
+
+    <div class="dialog-box bg-light hide">
+        <form class="task-data-form bg-light hide">
             <div class="task-title-section">
                 <label for="title"  class="label-content">Task Title</label> <br>
-                <input type="text" id="title" name="title" class="input-task-field mt-md" />
+                <input type="text" id="title" name="title" class="input-task-field mt-md" placeholder="Enter task title" />
             </div>
             <div class="select-priorityTask-section mt-2lg">   
                <label for="priority" class="label-content">Select Task Priority</label> <br>
@@ -62,17 +79,18 @@
 
                <div class="task-decription mt-2lg">
                    <label for="textarea" class="label-content">Task Description</label> <br>
-                   <textarea name="textarea" id="textarea" class="description-area mt-md" ></textarea>
+                   <textarea name="textarea" id="textarea" class="description-area mt-md" placeholder="Enter task description"></textarea>
                </div>
             </div>
             <button class="btn btn-primary-dark mt-xl " type="submit">
                 <div class="row">
-                    <div class="create-task-label">Add Task List</div>
+                    <div class="create-task-label">Add Task </div>
                 </div>
               </button>
          
-    </form></div>
+        </form>
     </div>
+   
     <script src="javascript/index.js"></script>
 </body>
 </html>
