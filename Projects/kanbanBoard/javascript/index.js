@@ -13,7 +13,7 @@ const taskFormRef = document.querySelector('.task-data-form')
 const taskDescription =document.querySelector('.description-area')
 const statusColRef = document.querySelectorAll('.status-box .col') 
 const tasksBoxRef = document.querySelector('.status-box .col .column .tasks-box')
-const trashTasksBoxRef =document.querySelector('.trash-task-box')
+const trashTasksBoxRef =document.querySelector('.trash-tasks-box')
 
 
 const bgLight="#ffffff";
@@ -33,6 +33,7 @@ const task={
 }
 
 
+
 let tasks;
 let trashTask;
 
@@ -44,8 +45,13 @@ function initializeLocaleStorage() {
         ]
     }
     trashTask = getTrashTaskFromLocaleStorage()
+    if(!trashTask){
+        trashTask=[
+
+        ]
+    }
     renderTaskList(tasks)
-    renderTrashTaskList(task)
+    renderTrashTaskList(trashTask)
 
 }
 
@@ -55,16 +61,35 @@ initializeLocaleStorage()
 function getTaskTicket(task){
     return `                
     <div class="row space-between ">
-        <div class="task-id">${task.id} </div>
+        <div class="task-id" task-id="${task.id}">${task.id} </div>
         <div class="task-priority" task-color="p${task.priority}"></div>
     </div>
     <div class="task-title mt-sm">${task.title}</div>
     <hr>
-    <div class="task-description">${task.description} </div>
+    <textarea class="task-description" disabled cursor="disable">${task.description} </textarea>
     <div class="row space-between mt-lg">
-        <i class="material-icons md-10 delete" >delete</i>
+        <i class="material-icons md-10 delete">delete</i>
         <i class="material-icons md-10 lock" >lock</i>
+    </div>
+`
+}
 
+function getTrashTaskTicket(task){
+    return `                
+    <div class="row space-between btn">
+        <div class="task-id" task-id="${task.id}">${task.id} </div>
+        <div class="task-priority" task-color="p${task.priority}"></div>
+    </div>
+    <div class="task-title mt-sm">${task.title}</div>
+    <hr>
+    <textarea class="task-description" disabled cursor="disable">${task.description} </textarea>
+    <div class="row  mt-lg">
+        <div style="
+        font-size: 14px;
+        font-weight: 600;
+        font-family: monospace;
+        color: #2f2a2a;
+    "> Double Click Insert Item Back To Progress coloumn <div>
     </div>
 `
 }
@@ -90,21 +115,24 @@ function renderTaskList(taskList){
 }
 
 function renderTrashTaskList(taskList){
-    if(taskList.length)
-    {
+
     clearTrashList()
     taskList.forEach((taskData)=>{
         const taskDiv = document.createElement('div') 
         taskDiv.classList.add('task-box')
         taskDiv.classList.add('bg-light')
-        taskDiv.innerHTML = getTaskTicket(taskData)
+        taskDiv.innerHTML = getTrashTaskTicket(taskData)
         trashTasksBoxRef.appendChild(taskDiv)
     })
-}
+
 }
 
-function storeTaskToLocalStorage(taskList){
+function updateTaskInLocalStorage(taskList){
     localStorage.setItem('tasks',JSON.stringify(taskList))
+}
+
+function updateTrashTaskList(taskList){
+    localStorage.setItem('trashTasks',JSON.stringify(taskList))
 }
 
 function getTaskFromLocaleStorage(){
@@ -235,6 +263,93 @@ function hideDialogBox(){
     taskDataBoxRef.classList.add('hide')
 }
 
+function moveTaskFromTrash(taskId){
+    const findTaskIndex = trashTask.findIndex(task=>task.id===taskId)
+    const moveTaskElement = trashTask.splice(findTaskIndex,1)
+    tasks =[...moveTaskElement,...tasks]
+
+    updateTrashTaskList(trashTask)
+    updateTaskInLocalStorage(tasks)
+
+    renderTaskList(tasks)
+    renderTrashTaskList(trashTask)
+}
+
+function handleOnDelete(parentRef){
+    const taskId = parentRef.querySelector('.row .task-id').getAttribute('task-id')
+    const findTaskIndex = tasks.findIndex(task=>task.id === taskId)
+    const deletedElement = (tasks.splice(findTaskIndex,1))
+
+    trashTask=[...trashTask,...deletedElement]
+
+    // updateTrashTaskList(trashTask)
+    updateTaskInLocalStorage(tasks)
+
+    renderTaskList(tasks)
+    renderTrashTaskList(trashTask)
+}
+
+function handleOnLock(elementRef,parentRef){
+    elementRef.classList.remove('unlock')
+    elementRef.innerText ='lock'
+    elementRef.classList.add('lock')
+
+    const textareaRef =parentRef.querySelector('textarea')
+    textareaRef.setAttribute('cursor','disable')
+    textareaRef.setAttribute('disabled',true)
+
+}
+
+function handleOnUnlock(elementRef,parentRef){
+    elementRef.classList.remove('lock')
+    elementRef.innerText ='lock_open'
+    elementRef.classList.add('unlock')
+
+    const textareaRef =parentRef.querySelector('textarea')
+    textareaRef.setAttribute('cursor','inherit')
+    textareaRef.removeAttribute('disabled')
+
+    textareaRef.addEventListener('blur',(e)=>{
+      
+        const currentTaskContainerRef = e.target.parentElement.querySelector('.row .task-id')
+        const currentTaskId = currentTaskContainerRef.getAttribute('task-id')
+        updateTaskDescription(currentTaskId,e.target.value)
+    })
+}
+
+
+function updateTaskDescription(id,updatedDescription){
+    const selectTask = tasks.find((task)=>task.id===id)
+    selectTask.description = updatedDescription
+    updateTaskInLocalStorage(tasks)
+
+}
+
+tasksBoxRef.addEventListener('click',(e)=>{
+    const parentRef = e.target.parentElement.parentElement
+
+    if(e.target.classList.contains('lock')){
+        handleOnUnlock(e.target,parentRef)
+        return
+    }
+    if(e.target.classList.contains('unlock')){
+        handleOnLock(e.target,parentRef)
+        return
+    }
+    if(e.target.classList.contains('delete')){
+        handleOnDelete(parentRef)
+        return
+    }
+   
+    
+})
+
+trashTasksBoxRef.addEventListener('dblclick',(e)=>{
+    const currentTask=(e.target.closest('.task-box'))
+    const currentTaskId =currentTask.querySelector('.row .task-id').getAttribute('task-id')
+    moveTaskFromTrash(currentTaskId)
+})
+
 
 navBoxRef.addEventListener('dblclick',(e)=>{
     navBoxRef.classList.add('hide')
@@ -274,10 +389,12 @@ taskFormRef.addEventListener('submit',(e)=>{
     if(formData.title&&formData.description){
         tasks.push({...formData})
         renderTaskList(tasks)
-        storeTaskToLocalStorage(tasks)
+        updateTaskInLocalStorage(tasks)
         clearCreateTaskValue()
     }else
    
  return true
 })
+
+
 
