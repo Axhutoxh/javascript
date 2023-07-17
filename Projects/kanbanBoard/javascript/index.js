@@ -275,6 +275,26 @@ function moveTaskFromTrash(taskId){
     renderTrashTaskList(trashTask)
 }
 
+
+function handleOnTaskPriority(parentRef){
+    const taskId = parentRef.querySelector('.row .task-id').getAttribute('task-id')
+    const currentPriorityRef =parentRef.querySelector('.row .task-priority')
+    let currentPriority = +(currentPriorityRef.getAttribute('task-color').split('p')[1])
+    const lockStatus = parentRef.querySelector('.task-description').hasAttribute('disabled')
+
+    if(!lockStatus){
+        currentPriority = (currentPriority)%4 +1
+        currentPriorityRef.setAttribute('task-color',`p${currentPriority}`)
+
+        const impactedTask = tasks.find(task=>task.id === taskId)
+        impactedTask.priority = currentPriority
+        updateTaskInLocalStorage(tasks)
+        return
+    }
+
+
+}
+
 function handleOnDelete(parentRef){
     const taskId = parentRef.querySelector('.row .task-id').getAttribute('task-id')
     const findTaskIndex = tasks.findIndex(task=>task.id === taskId)
@@ -338,6 +358,10 @@ tasksBoxRef.addEventListener('click',(e)=>{
     }
     if(e.target.classList.contains('delete')){
         handleOnDelete(parentRef)
+        return
+    }
+    if(e.target.classList.contains('task-priority')){
+        handleOnTaskPriority(parentRef)
         return
     }
    
