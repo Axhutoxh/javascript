@@ -123,7 +123,7 @@ function generateDaysOption(year,month){
 
 generateMonthsOption()
 generateYearsOption()
-generateDaysOption(todaysDate.getFullYear(),todaysDate.getMonth())
+generateDaysOption(Number(todaysDate.getFullYear()),Number(todaysDate.getMonth()))
 
 
 monthRef.addEventListener('change',(e)=>{
@@ -141,15 +141,18 @@ yearRef.addEventListener('change',(e)=>{
 })
 
 prevBtnRef.addEventListener('click',()=>{
-    if(+monthRef.value>0){
-        monthRef.value = monthRef.value-1
+    let selectedMonth  = +monthRef.value
+    let selectedYear = +yearRef.value
+
+    if(selectedMonth>0){
+        monthRef.value = selectedMonth-1
     }
     else{
-        yearRef.value -=1
+        yearRef.value =selectedYear-1
         monthRef.value =11 
     }
 
-generateDaysOption(yearRef.value,monthRef.value)
+generateDaysOption(Number(yearRef.value),Number(monthRef.value))
 })
 
 nextBtnRef.addEventListener('click',()=>{
@@ -165,14 +168,14 @@ nextBtnRef.addEventListener('click',()=>{
         monthRef.value =selectedMonth+1 
     }
 
-generateDaysOption(yearRef.value,monthRef.value)
+generateDaysOption(Number(yearRef.value),Number(monthRef.value))
 })
 
 
 todayBtnRef.addEventListener('click',()=>{
     yearRef.value =todaysDate.getFullYear()
     monthRef.value=todaysDate.getMonth()
-    generateDaysOption(yearRef.value,monthRef.value)
+    generateDaysOption(Number(yearRef.value),Number(monthRef.value))
 })
 
 
