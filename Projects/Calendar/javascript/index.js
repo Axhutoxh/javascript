@@ -156,7 +156,7 @@ nextBtnRef.addEventListener('click',()=>{
 
     let selectedMonth  = +monthRef.value
     let selectedYear = +yearRef.value
-    if(selectedMonth>11){
+    if(selectedMonth>=11){
         yearRef.value =selectedYear+1
         monthRef.value = 0
    
