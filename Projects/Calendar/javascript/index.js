@@ -3,8 +3,10 @@ const prevBtnRef  =document.querySelector('.controls .prev');
 const nextBtnRef =document.querySelector('.controls .next');
 const monthRef =document.querySelector('.controls .month');
 const yearRef =document.querySelector('.controls .year');
-const datesRef = document.querySelector('.dates')
-
+const datesRef = document.querySelector('.dates ')
+const todayBtnRef = document.querySelector('.emoji-box .todayBtn')
+const emojiViewRef = document.querySelector('.emoji-box .emoji-view')
+const selectedDateRef = document.querySelector('.emoji-box .selected-date')
 
 const MONTHNAMES = [
     'Jan',
@@ -23,6 +25,38 @@ const MONTHNAMES = [
 
 const todaysDate = new Date();
 
+
+const Emoji=[
+    '😪',
+    '😢',
+    '😫',
+    '😑',
+    '😌',
+    '🍻',
+    '🤩'
+
+]
+
+let selectedDate = []
+
+if(!selectedDate.length){
+    selectedDate = JSON.parse(localStorage.getItem('selectedDate'))
+    renderSelectDate(selectedDate)
+}
+
+
+function renderSelectDate(dateList){
+    if(dateList){
+    const dateFragment =document.createDocumentFragment()
+    selectedDateRef.innerHTML=''
+    for (let i = 0; i < dateList.length; i++){
+        const createDiv = document.createElement('li')
+        createDiv.innerText = dateList[i]
+        dateFragment.appendChild(createDiv)
+    }
+    selectedDateRef.appendChild(dateFragment)
+}
+}
 
 function generateMonthsOption(){
     const monthOptionsFragment = document.createDocumentFragment();
@@ -61,6 +95,7 @@ function generateDaysOption(year,month){
     datesRef.innerHTML = ''
     const dateFragment = document.createDocumentFragment()
 
+  
     for(let i=0;i<startDate;i++){
         const createDateSpan = document.createElement('span')
         dateFragment.appendChild(createDateSpan);
@@ -73,6 +108,12 @@ function generateDaysOption(year,month){
         createDateSpan.innerText=i+1
         if(todaysDate.getDate()==i+1 && todaysDate.getFullYear()==yearRef.value &&todaysDate.getMonth()==monthRef.value){
             createDateSpan.classList.add('selected')
+            const emoji = document.createElement('span')
+            emojiViewRef.innerText = Emoji[((startDate+1)+i)%7]
+            
+        }
+        if(selectedDate.includes(`${i+1}/${monthRef.value}/${yearRef.value}`)){
+            createDateSpan.setAttribute('selected-border',1)
         }
         dateFragment.appendChild(createDateSpan);
     }
@@ -83,6 +124,7 @@ function generateDaysOption(year,month){
 generateMonthsOption()
 generateYearsOption()
 generateDaysOption(todaysDate.getFullYear(),todaysDate.getMonth())
+
 
 monthRef.addEventListener('change',(e)=>{
     const selectedYear = yearRef.value;
@@ -127,5 +169,24 @@ generateDaysOption(yearRef.value,monthRef.value)
 })
 
 
+todayBtnRef.addEventListener('click',()=>{
+    yearRef.value =todaysDate.getFullYear()
+    monthRef.value=todaysDate.getMonth()
+    generateDaysOption(yearRef.value,monthRef.value)
+})
 
 
+datesRef.addEventListener('click',(e)=>{
+    
+    if(selectedDate.includes(`${e.target.innerText}/${monthRef.value}/${yearRef.value}`)){
+        selectedDate.splice(selectedDate.indexOf(`${e.target.innerText}/${monthRef.value}/${yearRef.value}`),1)
+        e.target.removeAttribute('selected-border')
+    }
+    else{
+        selectedDate.push(`${e.target.innerText}/${monthRef.value}/${yearRef.value}`)
+        e.target.setAttribute('selected-border',1)
+    }
+
+    localStorage.setItem('selectedDate',JSON.stringify(selectedDate))
+    renderSelectDate(selectedDate)
+})
