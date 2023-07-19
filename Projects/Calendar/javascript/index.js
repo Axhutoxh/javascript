@@ -129,7 +129,7 @@ generateDaysOption(Number(todaysDate.getFullYear()),Number(todaysDate.getMonth()
 monthRef.addEventListener('change',(e)=>{
     const selectedYear = yearRef.value;
     const selectedMonth =e.target.value
-    generateDaysOption(selectedYear,selectedMonth)
+    generateDaysOption(Number(selectedYear),Number(selectedMonth))
 })
 
 
@@ -137,7 +137,7 @@ yearRef.addEventListener('change',(e)=>{
     const selectedYear = e.target.value;
     const selectedMonth =monthRef.value
 
-    generateDaysOption(selectedYear,selectedMonth)
+    generateDaysOption(Number(selectedYear),Number(selectedMonth))
 })
 
 prevBtnRef.addEventListener('click',()=>{
