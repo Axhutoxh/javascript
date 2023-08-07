@@ -1,0 +1,16 @@
+JAVASCRIPT MACHINE CODING  QUESTION
+
+1 -> html+js full stack 30-45mins 5min  5-10min
+
+Q.1 We have to impliment a employee dashboard. where first we have to fetch the employee details from json and show
+a list of employee to page, on click a particular employee we have to show employee all details, we have an add new employee
+btn to add a particular list, and have search functionality
+
+
+1.fetch data = > promise 
+2. click event => show a employee details
+3. add new employee 
+4. search => debounce
+
+
+page looks like 

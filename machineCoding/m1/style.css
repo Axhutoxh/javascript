@@ -1,0 +1,92 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px
+}
+
+
+.pointer-cursor{
+    cursor: pointer;
+}
+
+.m-t-4{
+    margin-top:10px
+}
+
+.border-1{
+    border: 1px solid black;
+}
+
+
+.border-radius-12{
+    border-radius:12px;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+  
+}
+
+.heading{
+    font-size:24px;
+    font-weight: bold;
+}
+
+
+.add-new-emp{
+    border:1px solid black;
+
+    padding: 12px;
+
+}
+
+.search-emp{
+    margin:10px
+}
+
+.searchText{
+    width:60vw;
+    padding:10px;
+}
+
+.employee-function{
+    display: flex;
+    flex-direction: row;
+    margin:10px
+}
+
+.employee-list{
+    width:40vw;
+    margin-right:4px;
+    padding:12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-details{
+    width:60vw;
+    padding:12px
+}
+
+.employee-name{
+    margin:4px;
+    padding: 6px;
+    text-align: center;
+}
+
+.hide{
+    display: none
+}
+
+.pop-up-window{
+    padding:20px;
+    position: absolute;
+    top: 50%;
+    width: 60vw;
+    left: 50%;
+    background: white;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
