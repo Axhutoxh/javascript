@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Stop Watch</title>
+        <style>
+            section{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .main{
+                width: 30vw;
+                text-align: center;
+            }
+            .border-1{
+                border: 1px solid black;
+            }
+            .border-radius-12{
+                border-radius: 12px;
+            }
+
+            .p-20{
+                padding: 20px
+            }
+            .timer-section{
+                font-size:30px;
+                font-weight: bold;
+                font-family: cursive;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 4px;
+            }
+            .time{
+                margin-top:10px;
+                color:gray;
+                font-size:30px;
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 4px;
+            
+            }
+            input{
+                border: none;
+                outline: none;
+    width: 60px;
+    color: gray;
+    font-size: 30px;
+    padding: 4px;
+            }
+
+            .btns{
+                margin-top:10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="main border-1 border-radius-12 p-20">
+                <div class="timer-section">
+                    <div>HH :</div>
+                    <div>MM :</div>
+                    <div>SS</div>
+                </div>
+                <div class="time">
+                    <input type="number" value="" placeholder="00" class="hh" />:
+                    <input type="number" value="" placeholder="00"  class="mm"/>:
+                    <input type="number" value="" placeholder="00"  class="ss"/>
+                   </div>
+                <div class="btns">
+                    <button class="start">Start</button>
+                    <button class="reset">Reset</button></div>
+            </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
