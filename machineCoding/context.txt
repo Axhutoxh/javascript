@@ -13,4 +13,11 @@ btn to add a particular list, and have search functionality
 4. search => debounce
 
 
-page looks like 
+1.edit employee 
+2.delete employee
+3. last class all user data with actucal api
+
+
+
+Q.2 you have to create a stop watch. it should have start and reset , it indicates hh:mm:ss 
+
