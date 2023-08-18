@@ -1,0 +1,26 @@
+library are created for single intent .
+framework are created for multiple intent .
+
+
+
+
+react js is a js library created for building 
+fast and interactive user interfaces for, 
+web and mobile applications it is an open-source,
+components-based,front-end library responsible  only for
+the application's view layer.
+
+why react so popular :=> 
+1. Improved Performance = use virtual dom , performance control 
+2. Easy creation of Dynamic Apps = less code ,more functionality
+3. Reusable Components = less development time , build only once and reuse 
+4. small learning curve = easy to learn , uses fundamental of html and js
+5. Buld mobile and web apps = write once using react and build it for web,android and ios 
+6. great debugging tooling = chrome extenstions 
+7. unidirectional data flow = controlled data flow , easy to debug
+
+
+Steps to build react app from scratch
+-Install node
+-npx create-react-app App_name
+-npm start
