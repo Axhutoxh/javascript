@@ -24,3 +24,6 @@ Steps to build react app from scratch
 -Install node
 -npx create-react-app App_name
 -npm start
+
+
+
