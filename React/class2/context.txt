@@ -1,0 +1,11 @@
+- state
+- props
+
+useState 
+parent child props passing 
+render is depend upon props and state value changes
+
+
+
+home work
+how use state works in react

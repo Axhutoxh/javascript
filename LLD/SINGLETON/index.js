@@ -13,12 +13,6 @@ const singleton = (function(){
     }
 })()
 
-
-
-
-
-
-
 console.log(singleton.getInstance())
 console.log(singleton.getInstance())
 console.log(singleton.getInstance())
