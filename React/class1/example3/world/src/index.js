@@ -3,19 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-// import App from './App';
+import App from './App';
 // import Like from './components/Like';
 // import Counter from './components/counter';
 // import RandomName from './components/RandomName';
 
-import ParentMoney from './components/ParentMoney';
+// import ParentMoney from './components/ParentMoney';
+import TodoList from './components/TodoList';
+import RegisterationForm from './components/RegisterationForm';
 
+const Component  = ()=>{
+    return(<div>Hello abcs</div>)
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
- <div className="App">
-  <ParentMoney />
+ <div >
+    <Component />
+<RegisterationForm />
   {/* <Like />
   <Counter counterName={'Ashutosh'} intialValue={4} />
   <Counter counterName={'Abhishek'} intialValue={6} />

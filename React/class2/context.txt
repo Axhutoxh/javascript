@@ -6,6 +6,11 @@ parent child props passing
 render is depend upon props and state value changes
 
 
-
 home work
 how use state works in react
+
+
+class 3
+- Rendering list
+- Conditional rendering
+- Forms

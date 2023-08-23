@@ -26,4 +26,5 @@ Steps to build react app from scratch
 -npm start
 
 
-
+1. use single state() in form
+2. use single method to update above 

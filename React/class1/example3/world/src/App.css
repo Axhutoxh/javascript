@@ -45,3 +45,8 @@
   align-items: center;
   height:200px
 }
+
+
+.completed{
+  text-decoration: line-through;
+}
