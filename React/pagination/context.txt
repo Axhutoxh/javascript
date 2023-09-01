@@ -1,0 +1,15 @@
+vite
+
+npm create vite@latest
+    project name 
+    type of project - react
+    language prefrence 
+npm i
+
+check script run command
+
+
+
+create-react-app 
+create vite 
+create-next-app@latest

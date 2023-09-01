@@ -1,82 +1,33 @@
-import { useState } from "react"
+import { useState } from "react";
 
-const RegisterationForm = ()=>{
+const RegistrationForm =()=> {
+  const [formData, setFormData] = useState({name: "",email: "",message: ""});
 
-    const [userName,setUserName] = useState('')
-    const [userPassword,setUserPassword] = useState('')
-    const [userPhone,setUserPhone] = useState()
-    const [userBatch,setUserBatch] = useState('DSA')
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
 
-    const [form,setForm] = useState(
-        {
-            userName:'',
-            userPassword:'',
-            userPhone:'',
-            userBatch:'',
-        }
-        )
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
+    );
+};
 
-    const handleUsername =(e)=>{
-        console.log(e)
-        setUserName(e.target.value)
-    }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="name">Name:</label>
+      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange}/>
 
-    const handlePassword =(e)=>{
-        console.log(e)
-        setUserPassword(e.target.value)
-    }
+      <label htmlFor="email">Email:</label>
+      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange}/>
 
-    const handlePhone =(e)=>{
-        console.log(e)
-        setUserPhone(e.target.value)
-    }
+      <label htmlFor="message">Message:</label>
+      <textarea id="message" name="message" value={formData.message} onChange={handleChange}/>
 
-    const handleBatch =(e)=>{
-        console.log(e)
-        setUserBatch(e.target.value)
-    }
-
-    const handleForm = (e)=>{
-console.log(e)
-    }
-
-
-    const handleOnSubmit =(e)=>{
-        console.log(userName,userPassword,userPhone,userBatch)
-        e.preventDefault();
-        
-    }
-    return(
-        <form onSubmit={handleOnSubmit}>
-            <div>
-                <label>UserName</label>
-                <input type="text" name="user" placeholder="Username" onChange={handleForm('username')} />
-            </div>
-
-            <div>
-                <label>Password</label>
-                <input type="password" name="user" placeholder="User password" onChange={handlePassword} />
-            </div>
-
-            <div>
-                <label>Phone</label>
-                <input type="tel" name="user" placeholder="phone" onChange={handlePhone}/>
-            </div>
-
-            <div>
-                <label>Batch</label>
-                <select onChange={handleBatch}>
-                    <option>DSA</option>
-                    <option>Frontend</option>
-                    <option>Backend</option>
-                    <option>Full Stack</option>
-                </select>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    )
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
 
-export default RegisterationForm
+export default RegistrationForm
