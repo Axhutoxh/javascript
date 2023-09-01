@@ -14,3 +14,10 @@ class 3
 - Rendering list
 - Conditional rendering
 - Forms
+
+
+React Lifecycle
+HTTP
+Movie App
+
+
