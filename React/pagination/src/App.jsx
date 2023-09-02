@@ -1,16 +1,25 @@
 
 
+import { useState } from 'react'
 import './App.css'
+import LifeCycle from './components/LifeCycle'
 
-import Paginator from './components/pagination'
+
 
 function App() {
+const [btn,setBtn] =useState(false)
 
+const handleBtn=()=>{
+  setBtn(!btn)
+}
 
   return (
     <>
-
-     <Paginator totalPages={10} maxPages={5} />
+    <button onClick={handleBtn}>click</button>
+{btn?<LifeCycle />:''}
+   
+{/* 
+     <Paginator totalPages={10} maxPages={5} /> */}
      {/* <BrowserRouter>
      <Routes>
       <Route path='/' element={<Home />} />
