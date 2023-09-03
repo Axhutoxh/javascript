@@ -1,9 +1,10 @@
 
 
+
 import notFound from '../assets/notFound1.svg'
 
-const PageNotFound = ()=>{
 
+const PageNotFound = ()=>{
 
     return (
         <div className=" flex flex-col h-screen justify-center items-center">
