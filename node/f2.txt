@@ -1,0 +1,1 @@
+i am writing in f2.txt appended text in f2
